@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bocado — telas de referência</title>
+<style>
+  /* Fonts bundled with the app; the same files the phone renders. */
+  @font-face { font-family: 'Fraunces 144 Soft'; font-weight: 400; src: url('../../assets/fonts/Fraunces144Soft-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'Fraunces 144 Soft'; font-weight: 500; src: url('../../assets/fonts/Fraunces144Soft-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'Fraunces 144 Soft'; font-weight: 600; src: url('../../assets/fonts/Fraunces144Soft-SemiBold.ttf') format('truetype'); }
+  @font-face { font-family: 'Inter'; font-weight: 400; src: url('../../assets/fonts/Inter-Regular.ttf') format('truetype'); }
+  @font-face { font-family: 'Inter'; font-weight: 500; src: url('../../assets/fonts/Inter-Medium.ttf') format('truetype'); }
+  @font-face { font-family: 'Inter'; font-weight: 600; src: url('../../assets/fonts/Inter-SemiBold.ttf') format('truetype'); }
+
+  /* Tokens — mirror src/theme/colors.ts. */
+  .theme, :root {
+    --background: #F7F4EE; --surface: #FFFFFF; --surfaceMuted: #EFEBE3;
+    --ink: #1B1D21; --inkMuted: #5C5F66; --inkSubtle: #7E8188;
+    --accent: #2F3A8C; --onAccent: #FFFFFF; --accentSoft: #E4E7F7;
+    --line: #E3DFD6; --track: #E6E2DA; --overGoal: #1E2661;
+    --protein: #3F5F7C; --carbs: #9C5A2C; --fat: #6E4E76;
+    --scrim: rgba(27,29,33,.42);
+    --inverseSurface: #1B1D21; --onInverseSurface: #F7F4EE; --inverseAccent: #93A0F2;
+    --kbd: #DCDFE3; --key: #FFFFFF; --keyMuted: #C5CAD1;
+  }
+  .dark {
+    --background: #15161A; --surface: #1E2026; --surfaceMuted: #262930;
+    --ink: #ECEAE4; --inkMuted: #A7A6A0; --inkSubtle: #767A82;
+    --accent: #93A0F2; --onAccent: #15161A; --accentSoft: #2A2F4F;
+    --line: #2C2F37; --track: #2A2D34; --overGoal: #C4CCFF;
+    --protein: #8FB6D6; --carbs: #EDA56E; --fat: #C39ACB;
+    --scrim: rgba(0,0,0,.55);
+    --inverseSurface: #ECEAE4; --onInverseSurface: #15161A; --inverseAccent: #2F3A8C;
+    --kbd: #202329; --key: #33373E; --keyMuted: #2A2E34;
+  }
+
+  /* Page (the paper the phones sit on) */
+  html { background: #77787A; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: #F2F0EA; }
+  .page { max-width: 1240px; margin: 0 auto; padding: 40px 24px 80px; }
+  .page h1 { font: 500 22px/28px Inter, system-ui, sans-serif; margin: 0 0 6px; }
+  .page p { font: 400 14px/20px Inter, system-ui, sans-serif; margin: 0 0 6px; color: #E6E3DC; max-width: 70ch; }
+  .lockup { width: 300px; height: auto; display: block; margin: 0 0 20px; color: #F2F0EA; }
+  .pair { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 44px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; width: 360px; }
+  .shot > figcaption { font: 500 13px/18px Inter, system-ui, sans-serif; color: #F2F0EA; }
+  .shot > figcaption span { color: #D6D3CC; font-weight: 400; }
+
+  /* Type roles — mirror src/theme/type.ts */
+  .hero { font: 400 52px/56px 'Fraunces 144 Soft', Georgia, serif; letter-spacing: -1px; }
+  .display { font: 400 40px/44px 'Fraunces 144 Soft', Georgia, serif; letter-spacing: -.6px; }
+  .title { font: 600 22px/28px Inter, system-ui, sans-serif; letter-spacing: -.2px; }
+  .heading { font: 500 17px/22px Inter, system-ui, sans-serif; }
+  .body { font: 400 16px/22px Inter, system-ui, sans-serif; }
+  .bodyMedium { font: 500 16px/22px Inter, system-ui, sans-serif; }
+  .label { font: 400 13px/18px Inter, system-ui, sans-serif; }
+  .labelMedium { font: 500 13px/18px Inter, system-ui, sans-serif; }
+  .caption { font: 500 11px/14px Inter, system-ui, sans-serif; letter-spacing: .5px; }
+  .tab { font-variant-numeric: tabular-nums; }
+  .muted { color: var(--inkMuted); }
+  .accent { color: var(--accent); }
+
+  /* Phone: 360 × 740 dp, 1 dp = 1 px here */
+  .phone {
+    width: 360px; height: 740px; position: relative; overflow: hidden;
+    background: var(--background); color: var(--ink);
+    font: 400 16px/22px Inter, system-ui, sans-serif;
+    box-sizing: border-box; outline: 1px solid rgba(0,0,0,.25);
+  }
+  .phone *, .phone *::before, .phone *::after { box-sizing: border-box; }
+  .status { height: 24px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; font: 500 12px/16px Inter, system-ui, sans-serif; }
+  .navbar { position: absolute; left: 0; right: 0; bottom: 0; height: 48px; display: flex; align-items: center; justify-content: center; gap: 72px; color: var(--inkSubtle); background: var(--background); }
+  .navbar i { display: block; width: 14px; height: 14px; border: 1.5px solid currentColor; }
+  .navbar i.tri { width: 0; height: 0; border: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 11px solid currentColor; }
+  .navbar i.circ { border-radius: 50%; }
+  .navbar i.sq { border-radius: 2px; }
+  .content { position: absolute; top: 24px; left: 0; right: 0; bottom: 48px; overflow: hidden; }
+
+  .hdr { height: 56px; display: flex; align-items: center; padding: 0 4px 0 16px; }
+  .hdr .grow { flex: 1; min-width: 0; }
+  .iconbtn { width: 48px; height: 48px; display: grid; place-items: center; color: var(--ink); }
+  .textbtn { height: 48px; display: inline-flex; align-items: center; gap: 8px; padding: 0 12px; color: var(--accent); white-space: nowrap; }
+  .textbtn.ink { color: var(--ink); }
+  .textbtn.compact { font: 500 13px/18px Inter, system-ui, sans-serif; }
+  svg.ic { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+  svg.ic.s20 { width: 20px; height: 20px; }
+
+  /* Day strip */
+  .days { display: flex; gap: 8px; padding: 0 16px 4px; }
+  .day { width: 40px; height: 56px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; position: relative; }
+  .day .wd { font: 500 11px/14px Inter, system-ui, sans-serif; letter-spacing: .5px; color: var(--inkMuted); }
+  .day .dn { font: 400 16px/22px Inter, system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+  .day.sel { background: var(--ink); color: var(--background); }
+  .day.sel .wd { color: var(--background); }
+  .day .dot { position: absolute; bottom: 6px; width: 4px; height: 4px; border-radius: 2px; background: var(--accent); }
+  .day.sel .dot { background: var(--inverseAccent); }
+
+  /* Hero block */
+  .heroBlock { padding: 20px 16px 0; }
+  .bar { height: 4px; border-radius: 2px; background: var(--track); margin-top: 10px; overflow: hidden; display: flex; }
+  .bar i { display: block; height: 100%; background: var(--accent); }
+  .macros { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 14px; }
+  .macro .b { height: 3px; border-radius: 1.5px; background: var(--track); margin-top: 4px; overflow: hidden; }
+  .macro .b i { display: block; height: 100%; }
+  .macro.p .b i { background: var(--protein); }
+  .macro.c .b i { background: var(--carbs); }
+  .macro.f .b i { background: var(--fat); }
+
+  /* Meals */
+  .meal { margin-top: 8px; }
+  .meal.first { margin-top: 20px; }
+  .mealHdr { height: 48px; display: flex; align-items: center; padding: 0 8px 0 16px; border-top: 1px solid var(--line); }
+  .mealHdr .name { flex: 1; min-width: 0; }
+  .mealHdr .sub { width: 46px; text-align: right; margin-left: 12px; }
+  .entry { height: 56px; display: flex; align-items: center; padding: 0 16px; gap: 12px; }
+  .entry .t { flex: 1; min-width: 0; }
+  .entry .t div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .empty { height: 36px; display: flex; align-items: center; padding: 0 16px; color: var(--inkMuted); }
+  .meal.first .mealHdr { border-top-color: transparent; }
+
+  /* Search */
+  .field { margin: 4px 16px 12px; height: 48px; border-radius: 12px; background: var(--surfaceMuted); display: flex; align-items: center; padding: 0 0 0 14px; gap: 10px; }
+  .field .txt { flex: 1; min-width: 0; display: flex; align-items: center; }
+  .field .caret { width: 2px; height: 20px; background: var(--accent); margin-left: 1px; }
+  .sec { padding: 20px 16px 8px; color: var(--inkMuted); }
+  .row { height: 64px; display: flex; align-items: center; padding: 0 8px 0 16px; gap: 8px; }
+  .row .t { flex: 1; min-width: 0; }
+  .row .l1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .l1 b { font-weight: 500; }
+  .row .l1 b.m { font-weight: 600; }
+  .row .l2 { display: flex; align-items: center; gap: 8px; color: var(--inkMuted); white-space: nowrap; overflow: hidden; }
+  .row .l2 span:first-child { overflow: hidden; text-overflow: ellipsis; }
+  .badge { display: inline-flex; align-items: center; height: 18px; padding: 0 6px; border-radius: 6px; background: var(--surfaceMuted); color: var(--inkMuted); font: 500 11px/14px Inter, system-ui, sans-serif; letter-spacing: .5px; flex: none; }
+  .plus { width: 48px; height: 48px; display: grid; place-items: center; flex: none; }
+  .ring { width: 36px; height: 36px; border-radius: 18px; border: 1.5px solid var(--inkSubtle); display: grid; place-items: center; color: var(--ink); }
+  .ring.on { background: var(--accent); border-color: transparent; color: var(--onAccent); }
+
+  .tray { position: absolute; left: 0; right: 0; height: 56px; background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -2px 8px rgba(27,29,33,.08); display: flex; align-items: center; padding: 0 16px; gap: 12px; }
+  .tray .grow { flex: 1; }
+  .btn { height: 48px; border-radius: 12px; background: var(--accent); color: var(--onAccent); display: inline-flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap; }
+  .btn.full { display: flex; }
+  .snack { position: absolute; left: 16px; right: 16px; min-height: 48px; background: var(--inverseSurface); color: var(--onInverseSurface); border-radius: 8px; display: flex; align-items: center; padding: 0 4px 0 12px; gap: 8px; }
+  .snack .grow { flex: 1; min-width: 0; display: flex; white-space: nowrap; }
+  .snack .nm { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .snack .rest { flex: none; }
+  .snack .act { height: 48px; display: inline-flex; align-items: center; padding: 0 8px; color: var(--inverseAccent); }
+
+  /* Keyboard (space it really takes on the J6) */
+  .kbd { position: absolute; left: 0; right: 0; bottom: 0; height: 264px; background: var(--kbd); padding: 8px 4px 6px; display: flex; flex-direction: column; gap: 8px; }
+  .kbd .r { display: flex; gap: 5px; justify-content: center; }
+  .kbd .k { width: 30px; height: 40px; border-radius: 5px; background: var(--key); display: grid; place-items: center; font: 400 15px/18px Inter, system-ui, sans-serif; color: var(--ink); }
+  .kbd .k.w { width: 46px; background: var(--keyMuted); font-size: 12px; }
+  .kbd .k.sp { width: 160px; background: var(--key); }
+  .kbd .sug { height: 34px; display: flex; align-items: center; justify-content: space-around; color: var(--inkMuted); font: 400 14px/18px Inter, system-ui, sans-serif; }
+
+  /* Sheet */
+  .scrim { position: absolute; inset: 0; background: var(--scrim); }
+  .sheet { position: absolute; left: 0; right: 0; bottom: 0; background: var(--surface); border-radius: 24px 24px 0 0; padding: 8px 16px 16px; }
+  .handle { width: 36px; height: 4px; border-radius: 2px; background: var(--inkSubtle); margin: 0 auto 16px; }
+  .meta { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .stepper { display: flex; align-items: center; margin-top: 24px; }
+  .stepper .qty { flex: 1; display: flex; align-items: baseline; justify-content: center; gap: 8px; }
+  .chips { display: flex; gap: 8px; margin-top: 24px; overflow: hidden; }
+  .chip { height: 32px; border-radius: 999px; padding: 0 12px; background: var(--surfaceMuted); display: inline-flex; align-items: center; white-space: nowrap; font: 400 13px/18px Inter, system-ui, sans-serif; color: var(--ink); }
+  .chip.sel { background: var(--accentSoft); color: var(--accent); font-weight: 500; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-settings-2" viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+</svg>
+
+<div class="page">
+  <svg class="lockup" viewBox="0 0 750 152" role="img" aria-label="bocado">
+    <path fill="currentColor" d="M0 59.2L6.613 96.702A63.529 63.529 0 0 0 131.741 96.702L138.354 59.2H114.163L108.28 92.565A39.706 39.706 0 0 1 30.074 92.565L24.191 59.2Z"/>
+    <circle fill="#93A0F2" cx="69.177" cy="85.671" r="17.206"/>
+    <text x="182.354" y="147.2" font-family="'Fraunces 144 Soft', Georgia, serif" font-weight="400" font-size="200" letter-spacing="-3" fill="currentColor">bocado</text>
+  </svg>
+  <h1>Telas de referência</h1>
+  <p>360 × 740 dp (Galaxy J6), 1 dp = 1 px nesta página. Fontes, cores, papéis tipográficos e medidas vêm de <code>src/theme</code> e de <code>docs/DESIGN_SYSTEM.md</code>. O teclado e a barra de navegação de três botões estão desenhados no tamanho real que ocupam no J6, porque é o que sobra de tela que decide o layout.</p>
+  <p>Cada par mostra o tema claro e o escuro. Estático: é a referência que o <code>feature_lead</code> e o <code>ux_auditor</code> usam para julgar fidelidade.</p>
+
+  <!-- ============ HOJE — vazio ============ -->
+  <section class="pair" data-caption="Hoje — dia vazio" data-note="hero com a meta cheia; quatro refeições com convite e o anel “+” sempre visível">
+    <div class="phone theme">
+      <div class="status"><span>12:30</span><span>4G · 87 %</span></div>
+      <div class="content">
+        <div class="hdr">
+          <div class="grow title">Hoje</div>
+          <div class="textbtn ink compact"><svg class="ic s20"><use href="#i-settings-2"/></svg>Metas</div>
+        </div>
+        <div class="days">
+          <div class="day"><span class="wd">seg</span><span class="dn">7</span></div>
+          <div class="day sel"><span class="wd">ter</span><span class="dn">8</span><i class="dot"></i></div>
+          <div class="day"><span class="wd">qua</span><span class="dn">9</span></div>
+          <div class="day"><span class="wd">qui</span><span class="dn">10</span></div>
+          <div class="day"><span class="wd">sex</span><span class="dn">11</span></div>
+          <div class="day"><span class="wd">sáb</span><span class="dn">12</span></div>
+          <div class="day"><span class="wd">dom</span><span class="dn">13</span></div>
+        </div>
+        <div class="heroBlock">
+          <div class="hero tab">2.000</div>
+          <div class="body muted">disponíveis hoje</div>
+          <div class="bar"><i style="width:0"></i></div>
+          <div class="macros">
+            <div class="macro p"><div class="label muted">Proteína</div><div class="labelMedium tab">0 / 120 g</div><div class="b"><i style="width:0"></i></div></div>
+            <div class="macro c"><div class="label muted">Carboidratos</div><div class="labelMedium tab">0 / 250 g</div><div class="b"><i style="width:0"></i></div></div>
+            <div class="macro f"><div class="label muted">Gorduras</div><div class="labelMedium tab">0 / 65 g</div><div class="b"><i style="width:0"></i></div></div>
+          </div>
+        </div>
+        <div class="meal first">
+          <div class="mealHdr"><div class="name heading">Café da manhã</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="empty label">Nada registrado ainda</div>
+        </div>
+        <div class="meal">
+          <div class="mealHdr"><div class="name heading">Almoço</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="empty label">Nada registrado ainda</div>
+        </div>
+        <div class="meal">
+          <div class="mealHdr"><div class="name heading">Café da tarde</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="empty label">Nada registrado ainda</div>
+        </div>
+        <div class="meal">
+          <div class="mealHdr"><div class="name heading">Jantar</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="empty label">Nada registrado ainda</div>
+        </div>
+      </div>
+      <div class="navbar"><i class="tri"></i><i class="circ"></i><i class="sq"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ HOJE — com itens ============ -->
+  <section class="pair" data-caption="Hoje — com itens" data-note="760 de 2.000 consumidas; subtotal em Inter Medium 16 tabular sem unidade, em coluna de 46 dp sobre a coluna de kcal das entradas; macros na linha da porção; a lista continua abaixo do corte (rola)">
+    <div class="phone theme">
+      <div class="status"><span>12:30</span><span>4G · 87 %</span></div>
+      <div class="content">
+        <div class="hdr">
+          <div class="grow title">Hoje</div>
+          <div class="textbtn ink compact"><svg class="ic s20"><use href="#i-settings-2"/></svg>Metas</div>
+        </div>
+        <div class="days">
+          <div class="day"><span class="wd">seg</span><span class="dn">7</span></div>
+          <div class="day sel"><span class="wd">ter</span><span class="dn">8</span><i class="dot"></i></div>
+          <div class="day"><span class="wd">qua</span><span class="dn">9</span></div>
+          <div class="day"><span class="wd">qui</span><span class="dn">10</span></div>
+          <div class="day"><span class="wd">sex</span><span class="dn">11</span></div>
+          <div class="day"><span class="wd">sáb</span><span class="dn">12</span></div>
+          <div class="day"><span class="wd">dom</span><span class="dn">13</span></div>
+        </div>
+        <div class="heroBlock">
+          <div class="hero tab">1.240</div>
+          <div class="body muted">restantes · 760 de 2.000 kcal</div>
+          <div class="bar"><i style="width:38%"></i></div>
+          <div class="macros">
+            <div class="macro p"><div class="label muted">Proteína</div><div class="labelMedium tab">42 / 120 g</div><div class="b"><i style="width:35%"></i></div></div>
+            <div class="macro c"><div class="label muted">Carboidratos</div><div class="labelMedium tab">90 / 250 g</div><div class="b"><i style="width:36%"></i></div></div>
+            <div class="macro f"><div class="label muted">Gorduras</div><div class="labelMedium tab">20 / 65 g</div><div class="b"><i style="width:31%"></i></div></div>
+          </div>
+        </div>
+        <div class="meal first">
+          <div class="mealHdr"><div class="name heading">Café da manhã</div><div class="bodyMedium tab sub">412</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="entry"><div class="t"><div class="body">Pão francês</div><div class="label muted">1 unidade · 50 g · P 4 · C 29 · G 2</div></div><div class="body tab">150</div></div>
+          <div class="entry"><div class="t"><div class="body">Café com leite</div><div class="label muted">1 xícara · 200 g · P 5 · C 8 · G 4</div></div><div class="body tab">95</div></div>
+          <div class="entry"><div class="t"><div class="body">Ovo mexido</div><div class="label muted">2 unidades · 100 g · P 13 · C 1 · G 12</div></div><div class="body tab">167</div></div>
+        </div>
+        <div class="meal">
+          <div class="mealHdr"><div class="name heading">Almoço</div><div class="bodyMedium tab sub">348</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="entry"><div class="t"><div class="body">Arroz, tipo 1, cozido</div><div class="label muted">1 colher de servir · 45 g · P 2 · C 12 · G 0</div></div><div class="body tab">58</div></div>
+          <div class="entry"><div class="t"><div class="body">Feijão carioca, cozido</div><div class="label muted">1 concha · 140 g · P 7 · C 19 · G 1</div></div><div class="body tab">107</div></div>
+          <div class="entry"><div class="t"><div class="body">Frango, peito, grelhado</div><div class="label muted">1 filé · 115 g · P 36 · C 0 · G 4</div></div><div class="body tab">183</div></div>
+        </div>
+        <div class="meal">
+          <div class="mealHdr"><div class="name heading">Café da tarde</div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+          <div class="empty label">Nada registrado ainda</div>
+        </div>
+      </div>
+      <div class="navbar"><i class="tri"></i><i class="circ"></i><i class="sq"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ BUSCAR — antes de digitar ============ -->
+  <section class="pair" data-caption="Buscar alimento — antes de digitar" data-note="campo focado, teclado aberto: sobram quatro sugestões visíveis no J6; a lista rola por baixo">
+    <div class="phone theme">
+      <div class="status"><span>12:30</span><span>4G · 87 %</span></div>
+      <div class="content">
+        <div class="hdr">
+          <div class="grow heading">Almoço · ter 8</div>
+          <div class="iconbtn"><svg class="ic"><use href="#i-x"/></svg></div>
+        </div>
+        <div class="field">
+          <svg class="ic s20 muted"><use href="#i-search"/></svg>
+          <div class="txt"><span class="body muted">Buscar alimento</span><i class="caret"></i></div>
+        </div>
+        <div class="sec labelMedium">Sugestões</div>
+        <div class="row"><div class="t"><div class="l1"><b>Arroz</b><span class="muted">, tipo 1, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 58 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b>Feijão</b><span class="muted">, carioca, cozido</span></div><div class="l2 label"><span>1 concha (140 g) · 107 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b>Frango</b><span class="muted">, peito, grelhado</span></div><div class="l2 label"><span>1 filé (100 g) · 159 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b>Carne</b><span class="muted">, bovina, acém, cozida</span></div><div class="l2 label"><span>1 pedaço (80 g) · 171 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b>Alface</b><span class="muted">, crespa, crua</span></div><div class="l2 label"><span>1 prato (40 g) · 4 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b>Ovo</b><span class="muted">, de galinha, cozido</span></div><div class="l2 label"><span>1 unidade (50 g) · 73 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="kbd">
+          <div class="sug"><span>arroz</span><span>feijão</span><span>frango</span></div>
+          <div class="r"><i class="k">q</i><i class="k">w</i><i class="k">e</i><i class="k">r</i><i class="k">t</i><i class="k">y</i><i class="k">u</i><i class="k">i</i><i class="k">o</i><i class="k">p</i></div>
+          <div class="r"><i class="k">a</i><i class="k">s</i><i class="k">d</i><i class="k">f</i><i class="k">g</i><i class="k">h</i><i class="k">j</i><i class="k">k</i><i class="k">l</i></div>
+          <div class="r"><i class="k w">⇧</i><i class="k">z</i><i class="k">x</i><i class="k">c</i><i class="k">v</i><i class="k">b</i><i class="k">n</i><i class="k">m</i><i class="k w">⌫</i></div>
+          <div class="r"><i class="k w">?123</i><i class="k">,</i><i class="k sp"></i><i class="k">.</i><i class="k w">↵</i></div>
+        </div>
+      </div>
+      <div class="navbar"><i class="tri"></i><i class="circ"></i><i class="sq"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ BUSCAR — com resultados ============ -->
+  <section class="pair" data-caption="Buscar alimento — “arroz”, um item adicionado" data-note="primeiro resultado virou ✓; bandeja acima do teclado; snackbar de desfazer acima da bandeja">
+    <div class="phone theme">
+      <div class="status"><span>12:30</span><span>4G · 87 %</span></div>
+      <div class="content">
+        <div class="hdr">
+          <div class="grow heading">Almoço · ter 8</div>
+          <div class="iconbtn"><svg class="ic"><use href="#i-x"/></svg></div>
+        </div>
+        <div class="field">
+          <svg class="ic s20 muted"><use href="#i-search"/></svg>
+          <div class="txt"><span class="body">arroz</span><i class="caret"></i></div>
+          <div class="iconbtn"><svg class="ic s20"><use href="#i-x"/></svg></div>
+        </div>
+        <div class="sec labelMedium">Base</div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, tipo 1, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 58 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring on"><svg class="ic"><use href="#i-check"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, integral, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 56 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, tipo 2, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 59 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted"> carreteiro</span></div><div class="l2 label"><span>1 colher de servir (60 g) · 122 kcal</span><span class="badge">IBGE</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted"> doce</span></div><div class="l2 label"><span>1 colher de sopa (30 g) · 42 kcal</span><span class="badge">IBGE</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="snack" style="bottom: 328px"><div class="grow body"><span class="nm">Arroz</span><span class="rest">&nbsp;adicionado em Almoço</span></div><div class="act bodyMedium">Desfazer</div></div>
+        <div class="tray" style="bottom: 264px"><div class="grow bodyMedium tab">1 item · 58 kcal</div><div class="btn bodyMedium">Concluir</div></div>
+        <div class="kbd">
+          <div class="sug"><span>arroz</span><span>arroz integral</span><span>arrozes</span></div>
+          <div class="r"><i class="k">q</i><i class="k">w</i><i class="k">e</i><i class="k">r</i><i class="k">t</i><i class="k">y</i><i class="k">u</i><i class="k">i</i><i class="k">o</i><i class="k">p</i></div>
+          <div class="r"><i class="k">a</i><i class="k">s</i><i class="k">d</i><i class="k">f</i><i class="k">g</i><i class="k">h</i><i class="k">j</i><i class="k">k</i><i class="k">l</i></div>
+          <div class="r"><i class="k w">⇧</i><i class="k">z</i><i class="k">x</i><i class="k">c</i><i class="k">v</i><i class="k">b</i><i class="k">n</i><i class="k">m</i><i class="k w">⌫</i></div>
+          <div class="r"><i class="k w">?123</i><i class="k">,</i><i class="k sp"></i><i class="k">.</i><i class="k w">↵</i></div>
+        </div>
+      </div>
+      <div class="navbar"><i class="tri"></i><i class="circ"></i><i class="sq"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ FOLHA DE PORÇÃO ============ -->
+  <section class="pair" data-caption="Folha de porção" data-note="sobre a busca, sem teclado: quantidade em Fraunces 40, kcal ao vivo, medidas caseiras em chips, kcal no botão">
+    <div class="phone theme">
+      <div class="status"><span>12:30</span><span>4G · 87 %</span></div>
+      <div class="content">
+        <div class="hdr">
+          <div class="grow heading">Almoço · ter 8</div>
+          <div class="iconbtn"><svg class="ic"><use href="#i-x"/></svg></div>
+        </div>
+        <div class="field">
+          <svg class="ic s20 muted"><use href="#i-search"/></svg>
+          <div class="txt"><span class="body">arroz</span></div>
+          <div class="iconbtn"><svg class="ic s20"><use href="#i-x"/></svg></div>
+        </div>
+        <div class="sec labelMedium">Base</div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, tipo 1, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 58 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring on"><svg class="ic"><use href="#i-check"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, integral, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 56 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted">, tipo 2, cozido</span></div><div class="l2 label"><span>1 colher de servir (45 g) · 59 kcal</span><span class="badge">TACO</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="row"><div class="t"><div class="l1"><b class="m">Arroz</b><span class="muted"> carreteiro</span></div><div class="l2 label"><span>1 colher de servir (60 g) · 122 kcal</span><span class="badge">IBGE</span></div></div><div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div></div>
+        <div class="tray" style="bottom: 0"><div class="grow bodyMedium tab">1 item · 58 kcal</div><div class="btn bodyMedium">Concluir</div></div>
+        <div class="scrim"></div>
+        <div class="sheet">
+          <div class="handle"></div>
+          <div class="heading"><b style="font-weight:500">Arroz</b><span class="muted" style="font-weight:400">, tipo 1, cozido</span></div>
+          <div class="meta"><span class="badge">TACO</span><span class="label muted">para Almoço</span></div>
+          <div class="stepper">
+            <div class="plus"><div class="ring"><svg class="ic"><use href="#i-minus"/></svg></div></div>
+            <div class="qty"><span class="display tab">1,5</span><span class="heading muted">colher de servir</span></div>
+            <div class="plus"><div class="ring"><svg class="ic"><use href="#i-plus"/></svg></div></div>
+          </div>
+          <div class="label muted tab" style="text-align:center; margin-top:8px">87 kcal · P 1,7 g · C 19 g · G 0,1 g</div>
+          <div class="chips">
+            <span class="chip sel">colher de servir</span><span class="chip">colher de sopa</span><span class="chip">xícara</span><span class="chip">g</span>
+          </div>
+          <div class="btn full bodyMedium tab" style="margin-top:24px">Adicionar · 87 kcal</div>
+        </div>
+      </div>
+      <div class="navbar"><i class="tri"></i><i class="circ"></i><i class="sq"></i></div>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Each section holds the light phone; the dark twin is a clone with the dark
+  // token set, so the two can never drift apart.
+  document.querySelectorAll('section.pair').forEach(function (pair) {
+    var light = pair.querySelector('.phone');
+    var dark = light.cloneNode(true);
+    dark.classList.add('dark');
+    function wrap(phone, label) {
+      var fig = document.createElement('figure');
+      fig.className = 'shot';
+      fig.style.margin = '0';
+      var cap = document.createElement('figcaption');
+      cap.innerHTML = pair.dataset.caption + ' — ' + label + '<br><span>' + pair.dataset.note + '</span>';
+      fig.appendChild(cap);
+      fig.appendChild(phone);
+      return fig;
+    }
+    pair.appendChild(wrap(light, 'claro'));
+    pair.appendChild(wrap(dark, 'escuro'));
+  });
+</script>
+</body>
+</html>
