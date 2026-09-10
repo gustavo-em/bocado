@@ -1,0 +1,1259 @@
+foods: 2319
+distinct terms in names: 999
+distinct terms in categories: 54 (in 34 category strings)
+distinct terms in measure labels: 143 (in 236 labels)
+glossary entries for names: 1180 (phrases 114, terms 890, keep 176, pending 12)
+foods with the whole name translated: 2300 (99.2%)
+labels translated: 230/236
+categories translated: 34/34
+
+# unknown terms, by number of foods they block
+5	jacare
+4	cuscuz
+2	requeijao
+2	sua
+1	co
+1	mao
+1	n
+1	ne
+1	se
+1	tudo
+
+# name terms by frequency
+646	de
+239	carne
+225	em
+196	cozido
+166	frango
+154	cru
+146	frito
+133	bovina
+115	assado
+115	file
+112	ao
+110	crua
+108	galinha
+107	ou
+103	com
+94	refogado
+89	molho
+84	light
+78	nao
+77	grelhado
+73	ensopado
+70	inteiro
+67	doce
+59	a
+58	vermelho
+56	posta
+54	peixe
+52	sem
+51	leite
+50	milanesa
+50	queijo
+49	especificado
+49	oleo
+46	diet
+44	qualquer
+43	suina
+40	bovino
+40	sabor
+40	suco
+38	gordura
+38	organico
+37	batata
+34	milho
+32	e
+32	peito
+31	conserva
+29	sopa
+28	feijao
+27	especificada
+26	agua
+26	arroz
+26	manteiga
+26	salgado
+25	pedacos
+24	cozida
+24	hamburguer
+24	lombo
+24	pao
+24	pele
+24	po
+23	branco
+23	laranja
+23	peru
+21	camarao
+21	farinha
+21	soja
+20	alho
+20	biscoito
+20	bisteca
+20	costela
+20	figado
+20	suino
+19	banana
+18	amendoim
+18	cenoura
+18	chocolate
+18	macarrao
+18	segunda
+17	mandioca
+17	mar
+17	porco
+17	trigo
+16	bolo
+16	da
+16	ovo
+15	alcatra
+15	asa
+15	coco
+15	creme
+15	tipo
+14	abobora
+14	aipim
+14	couve
+14	integral
+14	lingua
+14	palmito
+14	pe
+14	sal
+14	vinagrete
+13	acem
+13	congelada
+13	frita
+13	inhame
+13	polpa
+13	repolho
+13	vaca
+13	verde
+12	abobrinha
+12	beterraba
+12	frutas
+12	grao
+12	iogurte
+12	lagarto
+12	moida
+12	refrigerante
+11	bacalhau
+11	barra
+11	cafe
+11	caldo
+11	cebola
+11	cereais
+11	chuchu
+11	contra-file
+11	coracao
+11	fresco
+11	in
+11	natura
+11	pasta
+11	prato
+11	tomate
+11	tradicional
+10	cabeca
+10	capa
+10	legumes
+10	mignon
+10	organica
+10	outros
+10	parte
+10	pernil
+10	salgada
+10	terra
+9	achocolatado
+9	animais
+9	batata-inglesa
+9	branca
+9	calda
+9	cara
+9	congelado
+9	mocoto
+9	morango
+9	musculo
+9	patinho
+9	paulista
+9	pessego
+9	picanha
+9	pizza
+9	primeira
+9	vitamina
+8	acucar
+8	assada
+8	baroa
+8	bebida
+8	berinjela
+8	bolinho
+8	contrafile
+8	fruta
+8	geleia
+8	goiaba
+8	grelhada
+8	industrializado
+8	limao
+8	linguica
+8	marca
+8	mini
+8	moela
+8	pastel
+8	presunto
+8	quiabo
+8	sanduiche
+8	vagem
+7	aveia
+7	brocolis
+7	caju
+7	ervilha
+7	forma
+7	fresca
+7	mamao
+7	mandioquinha
+7	manga
+7	maracuja
+7	margarina
+7	mingau
+7	miudo
+7	natural
+7	ouro
+7	ovos
+7	paleta
+7	prata
+7	recheado
+7	salada
+7	seca
+6	acerola
+6	alface
+6	almeirao
+6	castanha
+6	cha
+6	charque
+6	cola
+6	comida
+6	d'agua
+6	desidratada
+6	desnatado
+6	drumete
+6	exceto
+6	fraldinha
+6	grande
+6	jilo
+6	maca
+6	maminha
+6	maxixe
+6	minas
+6	mole
+6	mucarela
+6	osso
+6	para
+6	pato
+6	pera
+6	pescada
+6	pescoco
+6	preto
+6	refresco
+6	tripa
+6	uva
+6	verdura
+5	abacaxi
+5	acelga
+5	agriao
+5	bode
+5	bolacha
+5	cana
+5	caprino
+5	carcaca
+5	carneiro
+5	casca
+5	chicken
+5	chicoria
+5	dobradinha
+5	empanado
+5	esfirra
+5	inglesa
+5	jacare
+5	maionese
+5	massa
+5	mate
+5	moranga
+5	mostarda
+5	no
+5	nuggets
+5	pimentao
+5	pronto
+5	pudim
+5	redondo
+5	roxo
+5	salsicha
+5	sardinha
+5	soluvel
+5	tatu
+4	abadejo
+4	agulha
+4	ameixa
+4	atum
+4	bala
+4	base
+4	bombom
+4	broto
+4	canjiquinha
+4	cappuccino
+4	caprina
+4	caranguejo
+4	carre
+4	cerveja
+4	chuleta
+4	codorna
+4	concentrado
+4	corvina
+4	coxa
+4	coxao
+4	cuscuz
+4	do
+4	enlatada
+4	erva
+4	espinafre
+4	fiambre
+4	figo
+4	flocos
+4	flor
+4	infusao
+4	italiana
+4	lactea
+4	lima
+4	lipideos
+4	maria
+4	moido
+4	mortadela
+4	nabo
+4	ossada
+4	ovelha
+4	pacoca
+4	pedaco
+4	pre-cozida
+4	quibe
+4	rabanete
+4	refogada
+4	ricota
+4	salame
+4	salmao
+4	salsa
+4	seleta
+4	semente
+4	serralha
+4	shake
+4	siri
+4	sobrecoxa
+4	tablete
+4	tapioca
+4	tonica
+4	torrada
+4	tortas
+4	varejo
+4	vegetal
+3	1
+3	10minutos
+3	2
+3	5%
+3	aba
+3	abacate
+3	acai
+3	achocolatada
+3	aguardente
+3	amido
+3	angu
+3	azeite
+3	azeitona
+3	baiana
+3	bife
+3	bofe
+3	boi
+3	c
+3	cabrito
+3	cacao
+3	canjica
+3	capivara
+3	capote
+3	caruru
+3	catalonha
+3	cereal
+3	chambaril
+3	chester
+3	chips
+3	coalho
+3	cocada
+3	cremoso
+3	croquete
+3	cupim
+3	curau
+3	cuxa
+3	doces
+3	drenado
+3	empada
+3	enlatado
+3	envasado
+3	extrato
+3	farofa
+3	fato
+3	fibra
+3	filhos
+3	folha
+3	frescal
+3	fuba
+3	gelatina
+3	goma
+3	guariroba
+3	instantaneo
+3	lambari
+3	lentilha
+3	marica
+3	marisco
+3	mel
+3	melao
+3	merluza
+3	mexerica
+3	miolo
+3	mista
+3	mistura
+3	pa
+3	paca
+3	pepino
+3	pequi
+3	pintado
+3	pipoca
+3	polvilho
+3	portuguesa
+3	proteina
+3	pupunha
+3	q-suco
+3	radite
+3	recheada
+3	rio
+3	rosca
+3	rosinha
+3	seco
+3	sol
+3	sorvete
+3	taioba
+3	tangerina
+3	toucinho
+3	vazio
+3	waffer
+2	65%
+2	abatida
+2	acafrao
+2	ades
+2	adocante
+2	aipo
+2	alcool
+2	alfajores
+2	alimentar
+2	almondega
+2	almondegas
+2	amanteigado
+2	amarela
+2	amargo
+2	amendoa
+2	angola
+2	apresuntado
+2	araca
+2	atemoia
+2	atolada
+2	babacu
+2	baia
+2	banha
+2	batida
+2	blanquet
+2	bovinas
+2	bucho
+2	cabotian
+2	cabra
+2	caipira
+2	calabresa
+2	camomila
+2	capim
+2	caqui
+2	carambola
+2	caramelizado
+2	carioca
+2	cebolinha
+2	cevada
+2	champanhe
+2	chantilly
+2	charuto
+2	cheese
+2	chiclete
+2	chimarrao
+2	chineque
+2	cidreira
+2	clara
+2	coca
+2	coentro
+2	cogumelo
+2	conde
+2	condensado
+2	corimbata
+2	cotia
+2	couve-flor
+2	coxinha
+2	cristalizado
+2	cupuacu
+2	danette
+2	defumada
+2	dende
+2	dietetico
+2	drenada
+2	duro
+2	especie
+2	especificadas
+2	estrogonofe
+2	fanta
+2	feijoada
+2	fermentado
+2	fermento
+2	flanco
+2	folhas
+2	fradinho
+2	frances
+2	galego
+2	gergelim
+2	graviola
+2	guarana
+2	gueiroba
+2	hidrogenado
+2	infantil
+2	interesterificado
+2	jaba
+2	jaca
+2	jalo
+2	jamelao
+2	jardineira
+2	jerimum
+2	jucara
+2	kitute
+2	kiwi
+2	lasanha
+2	lazanha
+2	linhaca
+2	macaxeira
+2	manicoba
+2	manjuba
+2	marmelada
+2	mascavo
+2	matinal
+2	melancia
+2	milk
+2	mingnon
+2	moqueca
+2	morcilha
+2	nespera
+2	nhoque
+2	nova
+2	noz
+2	oliva
+2	omelete
+2	orelha
+2	ovas
+2	panelada
+2	panetone
+2	papaia
+2	passa
+2	pasteurizado
+2	pepininho
+2	petit
+2	picole
+2	pimenta
+2	pinha
+2	pitanga
+2	polenguinho
+2	polenta
+2	ponca
+2	pronta
+2	pure
+2	pururuca
+2	q-refresko
+2	quente
+2	quibebe
+2	quindim
+2	rajado
+2	ralado
+2	rapadura
+2	requeijao
+2	rucula
+2	sabores
+2	sagu
+2	salgadinhos
+2	salpicao
+2	sarapatel
+2	semidesnatado
+2	semipronta
+2	shoyu
+2	sua
+2	sururu
+2	tacaca
+2	tamarindo
+2	toddynho
+2	tofu
+2	torrado
+2	tremoco
+2	tropeiro
+2	tucuma
+2	tucupi
+2	umbu
+2	valencia
+2	variados
+2	vatapa
+2	vermelha
+2	vinho
+2	viscera
+2	visceras
+2	viva
+2	wafer
+2	yakissoba
+2	zelandia
+1	10%
+1	65%de
+1	80%
+1	abelha
+1	abiu
+1	acaraje
+1	acu
+1	agulhinha
+1	alcachofra
+1	alcaparra
+1	alcoolica
+1	alfafa
+1	alfavaca
+1	algodao-doce
+1	alho-poro
+1	amarelo
+1	ambrosia
+1	americana
+1	americano
+1	amora
+1	ananas
+1	andu
+1	apimentado
+1	argentina
+1	aromatizado
+1	arrasto
+1	arroz-doce
+1	arrozina
+1	arrumadinho
+1	aspargo
+1	ata
+1	atkins
+1	aurora
+1	avela
+1	aves
+1	bacaba
+1	bacabucu
+1	bacon
+1	baconzitos
+1	bacuri
+1	bahia
+1	baiao
+1	barbas
+1	barreado
+1	bau
+1	bauru
+1	beijinho
+1	beijo
+1	beiju
+1	bergamota
+1	bertalha
+1	bico
+1	biologico
+1	biriba
+1	bisnaguinha
+1	bobo
+1	bolognesa
+1	bomba
+1	brachola
+1	braco
+1	brasileira
+1	brasileiro
+1	bredo
+1	brevidade
+1	brigadeiro
+1	brioche
+1	broa
+1	bufala
+1	bufalo
+1	buriti
+1	butia
+1	cacarola
+1	cacau
+1	cachaca
+1	cachorro
+1	caipirinha
+1	caja
+1	caja-manga
+1	cajarana
+1	cajuina
+1	calzone
+1	canastra
+1	caneloni
+1	canja
+1	canola
+1	canudinho
+1	capeleti
+1	capixaba
+1	capuccino
+1	caramelo
+1	caraquento
+1	cariru
+1	carreteiro
+1	cascao
+1	castanha-de-caju
+1	castanha-do-brasil
+1	catchup
+1	catuaba
+1	cavalo
+1	caxiri
+1	centeio
+1	cereja
+1	champignon
+1	chandele
+1	cheesburguer
+1	chocomilk
+1	chope
+1	chourico
+1	chucrute
+1	churrasco
+1	churro
+1	ciriguela
+1	clorofila
+1	co
+1	coalhada
+1	colonia
+1	colonial
+1	complemento
+1	comum
+1	confete
+1	conhaque
+1	contra
+1	copa
+1	coquetel
+1	corda
+1	corimba
+1	cozidos
+1	cozimento
+1	cracker
+1	cravo
+1	cream
+1	cremogema
+1	crepe
+1	crespa
+1	cristal
+1	croissant
+1	croquinhos
+1	cruas
+1	cuca
+1	cura
+1	demerara
+1	desidratadas
+1	dois
+1	dourada
+1	dreher
+1	drink
+1	drops
+1	egg
+1	eggsburguer
+1	empadao
+1	energetica
+1	enriquecida
+1	enroladinho
+1	ensacado
+1	erva-doce
+1	escabeche
+1	escarola
+1	expresso
+1	extra
+1	fava
+1	fecula
+1	feijao-de-corda
+1	figada
+1	fios
+1	fluido
+1	formosa
+1	frio
+1	fritas
+1	fruta-pao
+1	fuji
+1	galeto
+1	galinhada
+1	garapa
+1	garrafa
+1	gatorade
+1	geladinho
+1	geleificado
+1	gema
+1	gemada
+1	germe
+1	girassol
+1	glicose
+1	glucose
+1	gluten
+1	goia
+1	goiabada
+1	gorgonzola
+1	granola
+1	grao-de-bico
+1	grega
+1	groselha
+1	grustoli
+1	guaiamu
+1	guandu
+1	guizado
+1	haden
+1	hortela
+1	india
+1	industrializada
+1	inga
+1	inteira
+1	ioio
+1	isotonica
+1	italia
+1	jaboticaba
+1	jabuti
+1	jabuticaba
+1	jambo
+1	jambu
+1	jamburao
+1	japonesa
+1	jenipapo
+1	jujuba
+1	jurubeba
+1	jussara
+1	ketchup
+1	kinder
+1	laranjinha
+1	legume
+1	levedo
+1	levedura
+1	licor
+1	lisa
+1	lula
+1	macarronada
+1	macauba
+1	maisena
+1	mangaba
+1	mangalo
+1	manguito
+1	manha
+1	manjar
+1	manjericao
+1	mao
+1	mari
+1	maricota
+1	mariola
+1	martini
+1	mascar
+1	meia
+1	meio
+1	melado
+1	menina
+1	merengue
+1	mesocarpo
+1	mil
+1	mimosa
+1	mineiro
+1	minuano
+1	miojo
+1	misto
+1	mix
+1	moca
+1	moleque
+1	morcela
+1	mousse
+1	mozarela
+1	mucaja
+1	mucilon
+1	mulatinho
+1	mumu
+1	mungunza
+1	murcote
+1	murici
+1	musli
+1	mutum
+1	n
+1	nambu
+1	nanica
+1	nata
+1	ne
+1	nectarina
+1	nescafe
+1	neston
+1	nogueira
+1	oregano
+1	original
+1	ostra
+1	ovomaltine
+1	pacoquinha
+1	pacova
+1	paio
+1	palha
+1	palito
+1	palma
+1	palmer
+1	pamonha
+1	panqueca
+1	paraguai
+1	parboilizado
+1	park
+1	parmesao
+1	pascoa
+1	pasteis
+1	pastilha
+1	pataua
+1	pate
+1	pave
+1	pe-de-moleque
+1	pescadinha
+1	pessegada
+1	picles
+1	pilsen
+1	pimenta-de-cheiro
+1	pinhao
+1	pirao
+1	pirulito
+1	pistache
+1	pitomba
+1	pois
+1	polido
+1	poro
+1	porquinho
+1	preparada
+1	presuntada
+1	presuntinho
+1	preta
+1	provolone
+1	puba
+1	quarto
+1	quebra
+1	quechimia
+1	queijadinha
+1	queimado
+1	queixo
+1	quicare
+1	quiche
+1	quimico
+1	quinino
+1	quinoa
+1	quirera
+1	rabada
+1	rabanada
+1	rabo
+1	ravioli
+1	refinado
+1	reino
+1	rim
+1	risole
+1	risoto
+1	rocambole
+1	role
+1	roma
+1	rosquinha
+1	roxa
+1	rubi
+1	rum
+1	salaminho
+1	salgadas
+1	salgadinho
+1	salsao
+1	santa
+1	sapoti
+1	sarolho
+1	sarrabulho
+1	saute
+1	schimier
+1	se
+1	sertao
+1	sete
+1	sidra
+1	sobremesa
+1	sonho
+1	sovado
+1	spray
+1	sprit
+1	steak
+1	strogonoff
+1	sufle
+1	suisse
+1	sukita
+1	sul
+1	sushi
+1	suspiro
+1	sustagem
+1	tabule
+1	tahiti
+1	tanja
+1	tapereba
+1	temperada
+1	tempero
+1	tender
+1	terere
+1	tommy
+1	torrao
+1	torresmo
+1	torrone
+1	tracaja
+1	trufa
+1	tubaina
+1	tucunare
+1	tudo
+1	tutu
+1	uacai
+1	uisque
+1	uxi
+1	vapor
+1	vinagreira
+1	virado
+1	virgem
+1	vitaflocos
+1	vitamilho
+1	vodka
+1	whisky
+1	williams
+1	xarope
+1	xerem
+1	yakisoba
+1	yakult
+
+# measure labels by frequency
+624	porcao
+430	unidade media
+384	colher de sopa cheia
+312	unidade
+287	colher de servir cheia
+258	pedaco medio
+245	copo medio
+218	fatia media
+200	copo americano
+177	copo grande
+116	copo de requeijao
+116	unidade pequena
+110	colher de sopa
+83	concha media cheia
+77	escumadeira media cheia
+71	coxa grande
+65	copo tulipa
+64	2 colheres de sopa cheias
+64	file medio
+62	colher de servir
+52	xicara de cha
+49	prato raso
+48	colher de sobremesa cheia
+48	fatia
+46	xicara de cafe
+44	copo de cafezinho
+40	posta media
+38	prato fundo
+37	concha
+37	pedaco pequeno
+36	2 colheres de arroz cheias
+35	prato fundo cheio
+34	2 colheres de sopa cheia
+34	pedaco
+33	2 colheres de sopa
+31	2 colheres de arroz cheia
+30	colher de sopa cheia picada
+29	peito medio
+29	sobrecoxa media
+29	unidade grande
+28	asa media
+28	ponta de faca
+25	colher de sobremesa
+25	pacote
+24	colher de cha cheia
+23	2 colheres de sopa cheias desfiado
+23	colher de sopa cheia picado
+23	porcao rotulo
+22	colher de sopa cheia desfiado
+22	passada de faca
+22	punhado
+19	2 conchas media cheias
+18	copo duplo cheio
+18	prato raso cheio
+17	lombo
+15	caneca
+15	colher de cafe
+15	pegador
+14	dose
+14	folha media
+13	4 colheres de sopa cheia desfiado
+12	4 colheres de sopa
+12	copo pequeno
+12	cumbuca
+12	fatia pequena
+12	posta pequena
+11	gomo/fatia media
+11	pescoco medio
+11	prato de sobremesa
+11	ramo medio
+10	colher de cha
+10	colher de sopa rasa
+10	copo pequeno cheio
+10	porcao media
+10	tablete
+9	2 colheres de sopa cheias picado
+9	escumadeira media cheia picada
+8	barra
+8	colher de servir cheia picada
+8	colher de sopa rasa picado
+8	garrafa (250 ml)
+8	gomo
+8	lata
+8	lata (350 ml)
+8	pacote pequeno
+8	prato fundo raso
+8	tigela
+7	2 colheres de servir
+7	lata (250 ml)
+7	rodela
+6	2 colheres de sopa rasas picado
+6	4 colheres de sopa rasa picado
+6	colher arroz cheia picado
+6	colher de servir cheia picado
+6	colher de sopa cheia em pasta
+6	colher de sopa cheia ralada
+6	coxa media
+6	prato raso raso
+6	taca
+5	1 fatia
+5	2 colheres de sopa cheia picado
+5	3 colheres de arroz cheias
+5	4 colheres de sopa cheia picado
+5	4 fatias medias
+5	colher de sopa cheia em tiras
+5	copo duplo
+5	fatia media em corte
+5	garrafa (200 ml)
+5	prato cheio
+5	prato de sobremesa cheio
+5	prato de sobremesa cheio picada
+5	sache
+5	xicara
+4	2 colheres de arroz
+4	2 colheres de sopa cheia picada
+4	2 colheres de sopa cheias em tiras
+4	espiga grande
+4	file pequeno
+4	garrafa (300 ml)
+4	pacote medio
+4	ramo
+3	1 unidade
+3	2 colheres de sopa cheia desfiado
+3	2 colheres de sopa rasa picado
+3	2 conchas
+3	2 fatias
+3	2 folhas
+3	2 unidades grandes
+3	4 colheres de sopa cheia
+3	cacho pequeno
+3	caneco
+3	colher de sopa cheia ralado
+3	copo duplo nivelado
+3	copo pequeno nivelado
+3	escumadeira
+3	escumadeira media rasa
+3	escumadeira media rasa picado
+3	espada media
+3	espada pequena
+3	folha
+3	garrafa (1 l)
+3	garrafa (500 ml)
+3	lata (335 ml)
+3	metade
+3	pedaco grande
+3	unidade comercial
+2	10 unidades medias
+2	2 colheres de arroz cheia desfiado
+2	2 colheres de sobremesa
+2	2 colheres de sopa cheias ralado
+2	2 colheres de sopa cheio picado
+2	2 escumadeiras media cheias
+2	2 folhas medias
+2	3 colheres de sopa cheia
+2	bago
+2	banda
+2	bisnaga
+2	bola media
+2	coio
+2	colher arroz cheia
+2	colher de cha cheia ralado
+2	colher de sobremesa cheia em pasta
+2	colher de sobremesa cheia ralado
+2	colher de sopa cheio picado
+2	colher sopa cheia picado
+2	copo
+2	copo duplo cheio picado
+2	escumadeia media rasa picado
+2	escumadeira media rasa picada
+2	folded
+2	garrafa (290 ml)
+2	garrafa (350 ml)
+2	garrafa (600 ml)
+2	pacote grande
+2	parte comestivel de 1 caroco de pequi
+2	pedaco de 3cm
+2	pedaco medo
+2	pires cheio picado
+2	porcao guia alimenar
+2	prato de sobremesa cheia picada
+2	prato raso cheia picada
+2	prato raso cheio picado
+2	prato raso picada
+2	prato raso raso picada
+2	rodela media
+2	unidade media verde
+2	xicara de cha cheia
+1	1 garrafa pet
+1	10 unidades grandes
+1	2 colher de sopa rasas picado
+1	2 colheres de arroz cheias picada
+1	2 colheres de arroz cheias picado
+1	2 colheres de sopa cheia em tiras
+1	2 conchas medias rasas
+1	2 escumadeiras media
+1	2 escumadeiras rasas picada
+1	2 fatias medias
+1	2 pires de folha
+1	2 pratos de sobremesa
+1	2 pratos rasos
+1	2 unidades
+1	2 unidades medias
+1	2 xicaras
+1	3 colheres de sopa
+1	4 colheres de sopa cheias
+1	colher de servir cheia desfiado
+1	colher de sobremesa cheia picada
+1	colher de sopa cheia cubos
+1	colher de sopa cheias
+1	colher de sopa cheio
+1	concha cheia
+1	concha media
+1	concha media rasa
+1	costela media
+1	escumadeira media
+1	escumadeira rasa picada
+1	escumadiera media cheia
+1	file media
+1	garrafa (1,5 l)
+1	garrafa (275 ml)
+1	garrafa (400 ml)
+1	garrafa pet
+1	geladinho gulozitos
+1	guia alimentar
+1	no
+1	pacote rosca
+1	pires
+1	pires de folha
+1	prato de sobremesa medio
+1	prato grande
+1	prato sobremesa
+1	punhadinho
+1	sadia
+1	se a medida de 10g de bacon
+1	unidade pequena com 1 ovo
+1	unidade rosca

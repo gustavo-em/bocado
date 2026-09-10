@@ -1,0 +1,607 @@
+foods: 2319 (taco 591, ibge 1728, ibge duplicates folded into taco 115)
+taco items with household measures via crosswalk: 350
+foods with at least one household measure: 1913
+foods with an English name from the glossary: 2300 (99.2%)
+household measure labels with an English form: 230
+starter ids missing from seed: ibge:8002334
+boost ids missing from seed: ibge:8200302, ibge:8002225, ibge:8002334, ibge:8102101-frito_a
+
+taco:1	Arroz, integral, cozido	→ ibge:6300201	Arroz integral	score 6	colher de sopa cheia 20g, colher de servir cheia 63g, concha média cheia 117g, escumadeira média cheia 59g, prato fundo raso 100g, prato fundo cheio 200g
+taco:2	Arroz, integral, cru	→ (raw ingredient with cooked sibling)
+taco:3	Arroz, tipo 1, cozido	→ ibge:6300101	Arroz (polido, parboilizado, agulha, agulhinha)	score 999	colher de sopa cheia 25g, colher de servir cheia 45g, concha média cheia 100g, escumadeira média cheia 85g, prato fundo raso 100g, prato fundo cheio 200g
+taco:4	Arroz, tipo 1, cru	→ (raw ingredient with cooked sibling)
+taco:5	Arroz, tipo 2, cozido	→ ibge:6300101	Arroz (polido, parboilizado, agulha, agulhinha)	score 999	colher de sopa cheia 25g, colher de servir cheia 45g, concha média cheia 100g, escumadeira média cheia 85g, prato fundo raso 100g, prato fundo cheio 200g
+taco:6	Arroz, tipo 2, cru	→ (raw ingredient with cooked sibling)
+taco:7	Aveia, flocos, crua	→ ibge:6500401	Aveia em flocos	score 6	colher de sopa cheia 15g, porção 37.5g, colher de sobremesa cheia 7g, colher de chá cheia 2g, 2 colheres de sopa cheias 30g
+taco:8	Biscoito, doce, maisena	→ ibge:8002301	Biscoito doce	score 8	unidade 5g, porção 35g, punhado 17g, pacote 200g
+taco:9	Biscoito, doce, recheado com chocolate	→ ibge:8004801	Biscoito recheado	score 7	unidade 13g, porção 34g, punhado 17g, pacote 200g
+taco:10	Biscoito, doce, recheado com morango	→ ibge:8002301	Biscoito doce	score 6	unidade 5g, porção 35g, punhado 17g, pacote 200g
+taco:11	Biscoito, doce, wafer, recheado de chocolate	→ ibge:8004801	Biscoito recheado	score 6.5	unidade 13g, porção 34g, punhado 17g, pacote 200g
+taco:12	Biscoito, doce, wafer, recheado de morango	→ ibge:8002301	Biscoito doce	score 5.5	unidade 5g, porção 35g, punhado 17g, pacote 200g
+taco:13	Biscoito, salgado, cream cracker	→ ibge:8002201	Biscoito salgado	score 8	unidade 5g, porção 32.5g, punhado 17g, pacote 200g
+taco:14	Bolo, mistura para	→ (ingredient, no measures)
+taco:15	Bolo, pronto, aipim	→ ibge:8002701	Bolo de aipim	score 6.5	fatia média 80g
+taco:16	Bolo, pronto, chocolate	→ ibge:8003801	Bolo de chocolate	score 6.5	fatia média 60g, porção 35g
+taco:17	Bolo, pronto, coco	→ ibge:8004101	Bolo de coco	score 5.5	fatia média 60g
+taco:18	Bolo, pronto, milho	→ ibge:8002601	Bolo de milho	score 6.5	fatia média 60g, porção 50g
+taco:19	Canjica, branca, crua	→ ibge:8501903	Canjica	score 2.5	colher de sopa cheia 25g, concha média cheia 120g, copo pequeno cheio 180g, copo duplo cheio 240g, prato raso cheio 300g, prato fundo 460g
+taco:20	Canjica, com leite integral	→ ibge:8501903	Canjica	score 3	colher de sopa cheia 25g, concha média cheia 120g, copo pequeno cheio 180g, copo duplo cheio 240g, prato raso cheio 300g, prato fundo 460g
+taco:21	Cereais, milho, flocos, com sal	→ ibge:6502102	Flocos de cereais	score 4	colher de sopa cheia 4g, copo pequeno cheio 25g, copo duplo cheio 29.5g, xícara 30g, porção 30g, 2 colheres de sopa cheias 8g
+taco:22	Cereais, milho, flocos, sem sal	→ ibge:6502102	Flocos de cereais	score 3.5	colher de sopa cheia 4g, copo pequeno cheio 25g, copo duplo cheio 29.5g, xícara 30g, porção 30g, 2 colheres de sopa cheias 8g
+taco:23	Cereais, mingau, milho, infantil	→ (no measures)
+taco:24	Cereais, mistura para vitamina, trigo, cevada e aveia	→ (ingredient, no measures)
+taco:25	Cereal matinal, milho	→ ibge:6500903	Cereal matinal de milho em flocos	score 8	colher de sopa cheia 4g, copo pequeno cheio 25g, copo duplo cheio 29.5g, xícara 30g, porção 30g, 2 colheres de sopa cheias 8g
+taco:26	Cereal matinal, milho, açúcar	→ ibge:6500903	Cereal matinal de milho em flocos	score 7.5	colher de sopa cheia 4g, copo pequeno cheio 25g, copo duplo cheio 29.5g, xícara 30g, porção 30g, 2 colheres de sopa cheias 8g
+taco:27	Creme de arroz, pó	→ (ingredient, no measures)
+taco:28	Creme de milho, pó	→ (ingredient, no measures)
+taco:29	Curau, milho verde	→ (no measures)
+taco:30	Curau, milho verde, mistura para	→ (ingredient, no measures)
+taco:31	Farinha, de arroz, enriquecida	→ (ingredient, no measures)
+taco:32	Farinha, de centeio, integral	→ (ingredient, no measures)
+taco:33	Farinha, de milho, amarela	→ (ingredient, no measures)
+taco:34	Farinha, de rosca	→ (ingredient, no measures)
+taco:35	Farinha, de trigo	→ (ingredient, no measures)
+taco:36	Farinha, láctea, de cereais	→ (ingredient, no measures)
+taco:37	Lasanha, massa fresca, cozida	→ (no measures)
+taco:38	Lasanha, massa fresca, crua	→ (no measures)
+taco:39	Macarrão, instantâneo	→ ibge:6503401	Macarrão	score 999	colher de sopa cheia 25g, colher de sopa 20g, colher de servir cheia 50g, concha média cheia 160g, escumadeira média cheia 110g, pegador 110g
+taco:40	Macarrão, trigo, cru	→ (no measures)
+taco:41	Macarrão, trigo, cru, com ovos	→ (no measures)
+taco:42	Milho, amido, cru	→ (ingredient, no measures)
+taco:43	Milho, fubá, cru	→ (no measures)
+taco:44	Milho, verde, cru	→ (no measures)
+taco:45	Milho, verde, enlatado, drenado	→ ibge:7700401	Milho verde em conserva	score 6.5	colher de sopa 24g, colher de servir cheia 38g, porção 172g, colher de sobremesa cheia 17g, 2 colheres de arroz cheia 76g, espiga grande 100g
+taco:46	Mingau tradicional, pó	→ (ingredient, no measures)
+taco:47	Pamonha, barra para cozimento, pré-cozida	→ ibge:6905101	Pamonha	score 2.5	unidade 160g
+taco:48	Pão, aveia, forma	→ ibge:8001401	Pão integral	score 5	unidade 25g
+taco:49	Pão, de soja	→ ibge:8001501	Pão nao especificado	score 3.5	unidade 50g, porção 50g, bisnaga 200g
+taco:50	Pão, glúten, forma	→ ibge:8001401	Pão integral	score 3.5	unidade 25g
+taco:51	Pão, milho, forma	→ ibge:8001101	Pão de milho	score 6.5	unidade média 70g, porção 70g
+taco:52	Pão, trigo, forma, integral	→ ibge:8001401	Pão integral	score 999	unidade 25g
+taco:53	Pão, trigo, francês	→ ibge:8000105	Pão de sal	score 999	unidade 50g, porção 50g
+taco:54	Pão, trigo, sovado	→ ibge:8001501	Pão nao especificado	score 3	unidade 50g, porção 50g, bisnaga 200g
+taco:55	Pastel, de carne, cru	→ (raw ingredient with cooked sibling)
+taco:56	Pastel, de carne, frito	→ ibge:8500202	Pastel (queijo, carne, palmito)	score 6	unidade pequena 8g, unidade média 32g
+taco:57	Pastel, de queijo, cru	→ (raw ingredient with cooked sibling)
+taco:58	Pastel, de queijo, frito	→ ibge:8500202	Pastel (queijo, carne, palmito)	score 5	unidade pequena 8g, unidade média 32g
+taco:59	Pastel, massa, crua	→ ibge:8500202	Pastel (queijo, carne, palmito)	score 2.5	unidade pequena 8g, unidade média 32g
+taco:60	Pastel, massa, frita	→ ibge:8500202	Pastel (queijo, carne, palmito)	score 2.5	unidade pequena 8g, unidade média 32g
+taco:61	Pipoca, com óleo de soja, sem sal	→ (no measures)
+taco:62	Polenta, pré-cozida	→ ibge:8500218	Polenta	score 2.5	colher de sopa cheia 35g, colher de servir cheia 60g, concha média cheia 150g, pedaço médio 150g, prato raso 300g, prato fundo 500g
+taco:63	Torrada, pão francês	→ ibge:8000105	Pão de sal	score 999	unidade 50g, porção 50g
+taco:64	Abóbora, cabotian, cozida	→ ibge:6703901	Abóbora	score 2.5	colher de sopa cheia 36g, pedaço médio 50g, escumadeira média cheia picada 100g, porção 70g, 2 colheres de sopa cheias 72g
+taco:65	Abóbora, cabotian, crua	→ ibge:6703901	Abóbora	score 2.5	colher de sopa cheia 36g, pedaço médio 50g, escumadeira média cheia picada 100g, porção 70g, 2 colheres de sopa cheias 72g
+taco:66	Abóbora, menina brasileira, crua	→ (no measures)
+taco:67	Abóbora, moranga, crua	→ ibge:6703901	Abóbora	score 2.5	colher de sopa cheia 36g, pedaço médio 50g, escumadeira média cheia picada 100g, porção 70g, 2 colheres de sopa cheias 72g
+taco:68	Abóbora, moranga, refogada	→ ibge:6703901-refogado_a	Abóbora, refogado	score 3.5	colher de sopa cheia 30g, pedaço pequeno 30g, pedaço médio 50g, escumadeira média cheia 105g, porção 70g, 2 colheres de sopa cheias 60g
+taco:69	Abóbora, pescoço, crua	→ ibge:6703901	Abóbora	score 2.5	colher de sopa cheia 36g, pedaço médio 50g, escumadeira média cheia picada 100g, porção 70g, 2 colheres de sopa cheias 72g
+taco:70	Abobrinha, italiana, cozida	→ (no measures)
+taco:71	Abobrinha, italiana, crua	→ (no measures)
+taco:72	Abobrinha, italiana, refogada	→ ibge:6703701-refogado_a	Abobrinha, refogado	score 3.5	unidade 335g, colher de sopa cheia 30g, colher de servir cheia 70g, pedaço 17g, escumadeira média cheia 90g, porção 57g
+taco:73	Abobrinha, paulista, crua	→ (no measures)
+taco:74	Acelga, crua	→ ibge:6701501	Acelga	score 3	colher de sopa cheia picada 6g, colher de servir cheia 10g, prato raso picada 60g, prato raso raso picada 60g, porção 60g, folha média 10g
+taco:75	Agrião, cru	→ ibge:6701301	Agrião	score 3	colher de sopa cheia picado 7g, colher de servir cheia 50g, prato raso cheio picado 80g, porção média 37.5g, ramo médio 5g, pires cheio picado 10g
+taco:76	Aipo, cru	→ (no measures)
+taco:77	Alface, americana, crua	→ ibge:6700101	Alface	score 2.5	unidade pequena 130g, unidade média 200g, colher de sopa cheia picada 8g, prato de sobremesa cheio picada 30g, prato raso 50g, prato fundo 60g
+taco:78	Alface, crespa, crua	→ ibge:6700101	Alface	score 2.5	unidade pequena 130g, unidade média 200g, colher de sopa cheia picada 8g, prato de sobremesa cheio picada 30g, prato raso 50g, prato fundo 60g
+taco:79	Alface, lisa, crua	→ ibge:6700101	Alface	score 2.5	unidade pequena 130g, unidade média 200g, colher de sopa cheia picada 8g, prato de sobremesa cheio picada 30g, prato raso 50g, prato fundo 60g
+taco:80	Alface, roxa, crua	→ ibge:6700101	Alface	score 2.5	unidade pequena 130g, unidade média 200g, colher de sopa cheia picada 8g, prato de sobremesa cheio picada 30g, prato raso 50g, prato fundo 60g
+taco:81	Alfavaca, crua	→ (no measures)
+taco:82	Alho, cru	→ ibge:6706201	Alho	score 3	unidade 4.4g
+taco:83	Alho-poró, cru	→ ibge:6706301	Alho poro	score 6	2 colheres de sopa 15g
+taco:84	Almeirão, cru	→ (raw ingredient with cooked sibling)
+taco:85	Almeirão, refogado	→ ibge:6701601-refogado_a	Almeirão, refogado	score 4	colher de sopa 25g, porção média 27g, 2 folhas 24g, 2 colheres de sopa 50g
+taco:86	Batata, baroa, cozida	→ ibge:6400303	Mandioquinha salsa (batata baroa)	score 4	colher de sopa cheia 35g
+taco:87	Batata, baroa, crua	→ ibge:6400303	Mandioquinha salsa (batata baroa)	score 4	colher de sopa cheia 35g
+taco:88	Batata, doce, cozida	→ ibge:6400401	Batata doce	score 6	unidade média 355g, fatia média 70g
+taco:89	Batata, doce, crua	→ ibge:6400401	Batata doce	score 6	unidade média 355g, fatia média 70g
+taco:90	Batata, frita, tipo chips, industrializada	→ (no measures)
+taco:91	Batata, inglesa, cozida	→ ibge:6400101	Batata-inglesa	score 6	unidade média 140g, unidade pequena 70g, colher de sopa cheia 30g, colher de servir cheia 60g, pedaço pequeno 16g, porção 90g
+taco:92	Batata, inglesa, crua	→ ibge:6400101	Batata-inglesa	score 6	unidade média 140g, unidade pequena 70g, colher de sopa cheia 30g, colher de servir cheia 60g, pedaço pequeno 16g, porção 90g
+taco:93	Batata, inglesa, frita	→ ibge:6400101-frito_a	Batata-inglesa, frito	score 7	unidade pequena 70g, unidade média 140g, colher de sopa cheia 25g, colher de servir cheia 50g, pedaço pequeno 16g, escumadeira média cheia 65g
+taco:94	Batata, inglesa, sauté	→ ibge:6400101	Batata-inglesa	score 6.5	unidade média 140g, unidade pequena 70g, colher de sopa cheia 30g, colher de servir cheia 60g, pedaço pequeno 16g, porção 90g
+taco:95	Berinjela, cozida	→ ibge:6705401	Berinjela	score 3	unidade grande 200g, colher de sopa cheia 25g, colher de servir cheia 75g, fatia média 20g, porção 60g
+taco:96	Berinjela, crua	→ ibge:6705401	Berinjela	score 3	unidade grande 200g, colher de sopa cheia 25g, colher de servir cheia 75g, fatia média 20g, porção 60g
+taco:97	Beterraba, cozida	→ ibge:6401101	Beterraba	score 3	unidade média 140g, colher de sopa cheia ralada 16g, colher de servir cheia 38g, fatia média 12g, prato de sobremesa 168g, porção 42g
+taco:98	Beterraba, crua	→ ibge:6401101	Beterraba	score 3	unidade média 140g, colher de sopa cheia ralada 16g, colher de servir cheia 38g, fatia média 12g, prato de sobremesa 168g, porção 42g
+taco:99	Biscoito, polvilho doce	→ (ingredient, no measures)
+taco:100	Brócolis, cozido	→ ibge:6701704	Brócolis	score 3	2 colheres de sopa cheia picado 20g, ramo médio 60g
+taco:101	Brócolis, cru	→ (raw ingredient with cooked sibling)
+taco:102	Cará, cozido	→ (no measures)
+taco:103	Cará, cru	→ (raw ingredient with cooked sibling)
+taco:104	Caruru, cru	→ (no measures)
+taco:105	Catalonha, crua	→ (no measures)
+taco:106	Catalonha, refogada	→ ibge:6705801-refogado_a	Catalonha, refogado	score 3	porção 42g
+taco:107	Cebola, crua	→ ibge:6705701	Cebola	score 3	unidade pequena 30g, unidade média 70g, colher de sopa cheia 10g, fatia média 6g, 2 colheres de sopa cheia 20g, 2 colheres de sopa cheias 20g
+taco:108	Cebolinha, crua	→ ibge:6701101	Cebolinha	score 3	colher de sopa 2.3g, ramo 6.2g
+taco:109	Cenoura, cozida	→ ibge:6401201	Cenoura	score 3	unidade média 120g, unidade pequena 55g, colher de sopa cheia ralada 12g, fatia 5g, escumadeira média rasa picado 48g, porção 38g
+taco:110	Cenoura, crua	→ ibge:6401201	Cenoura	score 3	unidade média 120g, unidade pequena 55g, colher de sopa cheia ralada 12g, fatia 5g, escumadeira média rasa picado 48g, porção 38g
+taco:111	Chicória, crua	→ (no measures)
+taco:112	Chuchu, cozido	→ (no measures)
+taco:113	Chuchu, cru	→ (raw ingredient with cooked sibling)
+taco:114	Coentro, folhas desidratadas	→ (ingredient, no measures)
+taco:115	Couve, manteiga, crua	→ ibge:6700501	Couve	score 4	porção 42g, folha média 25g, 2 colheres de servir 84g
+taco:116	Couve, manteiga, refogada	→ ibge:6700501-refogado_a	Couve, refogado	score 5	colher de sopa cheia picada 20g, colher de servir 42g, prato cheio 120g, porção 42g, folha média 25g, 2 colheres de servir 84g
+taco:117	Couve-flor, crua	→ ibge:6700601	Couve flor	score 6	colher de sopa cheia 25g, porção 69g, 2 colheres de sopa cheias 50g, 2 colheres de sopa cheia 50g, ramo médio 60g
+taco:118	Couve-flor, cozida	→ ibge:6700601	Couve flor	score 6	colher de sopa cheia 25g, porção 69g, 2 colheres de sopa cheias 50g, 2 colheres de sopa cheia 50g, ramo médio 60g
+taco:119	Espinafre, Nova Zelândia, cru	→ (raw ingredient with cooked sibling)
+taco:120	Espinafre, Nova Zelândia, refogado	→ ibge:6700701-refogado_a	Espinafre, refogado	score 3	colher de sopa cheia 25g, porção 67g, 2 colheres de sopa cheia 50g
+taco:121	Farinha, de mandioca, crua	→ (ingredient, no measures)
+taco:122	Farinha, de mandioca, torrada	→ (ingredient, no measures)
+taco:123	Farinha, de puba	→ (ingredient, no measures)
+taco:124	Fécula, de mandioca	→ (no measures)
+taco:125	Feijão, broto, cru	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 2.5	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:126	Inhame, cru	→ ibge:6400501-cru_a	Inhame, cru	score 4	unidade média 125g, pedaço pequeno 30g, escumadeira média cheia 110g, porção 126g
+taco:127	Jiló, cru	→ ibge:6704201	Jiló	score 3	unidade média 26g, colher de sopa cheia 60g, colher de servir cheia 95g, porção 40g
+taco:128	Jurubeba, crua	→ (no measures)
+taco:129	Mandioca, cozida	→ (no measures)
+taco:130	Mandioca, crua	→ (no measures)
+taco:131	Mandioca, farofa, temperada	→ ibge:8502201	Farofa	score 999	colher de sopa cheia 15g, colher de servir cheia 45g, escumadeira média cheia 58g, colher de sobremesa cheia 10g
+taco:132	Mandioca, frita	→ ibge:6400601-frito_a	Mandioca, frito	score 4	unidade média 45g, colher de sopa cheia picado 35g, colher de servir cheia 60g, pedaço médio 70g, escumadeira média cheia picada 95g, porção 80g
+taco:133	Manjericão, cru	→ (no measures)
+taco:134	Maxixe, cru	→ ibge:6704301-cru_a	Maxixe	score 4	colher de sopa cheia 40g
+taco:135	Mostarda, folha, crua	→ (no measures)
+taco:136	Nhoque, batata, cozido	→ ibge:8500905	Nhoque	score 2.5	colher de sopa cheia 30g, colher de servir cheia 70g, escumadeira média cheia 100g
+taco:137	Nabo, cru	→ (no measures)
+taco:138	Palmito, Juçara, em conserva	→ ibge:7700501	Palmito em conserva	score 6.5	unidade média 100g, colher de sopa rasa picado 15g, porção rótulo 50g, 2 colheres de sopa rasa picado 30g, 2 colheres de sopa rasas picado 30g, 4 colheres de sopa rasa picado 60g
+taco:139	Palmito, pupunha, em conserva	→ ibge:7700501	Palmito em conserva	score 6.5	unidade média 100g, colher de sopa rasa picado 15g, porção rótulo 50g, 2 colheres de sopa rasa picado 30g, 2 colheres de sopa rasas picado 30g, 4 colheres de sopa rasa picado 60g
+taco:140	Pão, de queijo, assado	→ ibge:8000801	Pão de queijo	score 6	unidade pequena 10g, unidade média 20g, porção 58g
+taco:141	Pão, de queijo, cru	→ (raw ingredient with cooked sibling)
+taco:142	Pepino, cru	→ ibge:6704001	Pepino	score 3	unidade média 100g, colher de sopa cheia picado 18g, fatia pequena 3g, 2 colheres de sopa cheias picado 36g, 2 colheres de sopa cheia picada 36g
+taco:143	Pimentão, amarelo, cru	→ ibge:6704501	Pimentão	score 2.5	unidade pequena 38g, unidade média 55g, colher de sopa cheia 13g, fatia média 6g, porção 56g, 2 colheres de sopa cheias 26g
+taco:144	Pimentão, verde, cru	→ ibge:6704501	Pimentão	score 4	unidade pequena 38g, unidade média 55g, colher de sopa cheia 13g, fatia média 6g, porção 56g, 2 colheres de sopa cheias 26g
+taco:145	Pimentão, vermelho, cru	→ ibge:6704501	Pimentão	score 4	unidade pequena 38g, unidade média 55g, colher de sopa cheia 13g, fatia média 6g, porção 56g, 2 colheres de sopa cheias 26g
+taco:146	Polvilho, doce	→ (ingredient, no measures)
+taco:147	Quiabo, cru	→ ibge:6705001	Quiabo	score 3	unidade 18g, colher de sopa cheia 40g
+taco:148	Rabanete, cru	→ ibge:6401001-cru_a	Rabanete, cru	score 4	unidade média 25g, colher de sopa 11g, fatia média 4g, porção 90g, 2 colheres de sopa 22g
+taco:149	Repolho, branco, cru	→ ibge:6700901-cru_a	Repolho	score 3.5	colher de sopa cheia 10g, colher de servir cheia 25g, escumadeira média cheia 25g, prato de sobremesa cheio 150g, porção 60g, folha média 26g
+taco:150	Repolho, roxo, cru	→ (raw ingredient with cooked sibling)
+taco:151	Repolho, roxo, refogado	→ ibge:6700901-refogado_a	Repolho, refogado	score 3.5	colher de sopa cheia 20g, colher de servir cheia 45g, escumadeira média cheia 45g, prato de sobremesa cheio 150g, porção 75g, 2 colheres de arroz cheia 50g
+taco:152	Rúcula, crua	→ ibge:6702001	Rúcula	score 3	colher de sopa cheia 8g, prato de sobremesa cheia picada 30g, prato fundo 60g, prato raso cheia picada 80g, porção média 27g, ramo 6g
+taco:153	Salsa, crua	→ (no measures)
+taco:154	Seleta de legumes, enlatada	→ (no measures)
+taco:155	Serralha, crua	→ (no measures)
+taco:156	Taioba, crua	→ (no measures)
+taco:157	Tomate, com semente, cru	→ ibge:6705101	Tomate	score 2.5	unidade pequena 50g, unidade média 100g, colher de sopa cheia em tiras 30g, fatia média 15g, porção 80g, 2 colheres de sopa cheias em tiras 60g
+taco:158	Tomate, extrato	→ (ingredient, no measures)
+taco:159	Tomate, molho industrializado	→ ibge:7004801	Molho de tomate	score 4.5	colher de sopa 20g, colher de servir 45g, porção 20g, colher de sobremesa 17g, 2 colheres de sopa 40g, 4 colheres de sopa 80g
+taco:160	Tomate, purê	→ (no measures)
+taco:161	Tomate, salada	→ ibge:6705101	Tomate	score 3.5	unidade pequena 50g, unidade média 100g, colher de sopa cheia em tiras 30g, fatia média 15g, porção 80g, 2 colheres de sopa cheias em tiras 60g
+taco:162	Vagem, crua	→ ibge:6705201	Vagem	score 3	colher de sopa cheia 20g, porção 44g
+taco:163	Abacate, cru	→ ibge:6802701	Abacate	score 3	unidade pequena 370g, unidade média 430g, colher de sopa cheio picado 45g, copo duplo cheio picado 200g, porção 45g, 2 colheres de sopa cheio picado 90g
+taco:164	Abacaxi, cru	→ ibge:6802601	Abacaxi	score 3	unidade pequena 480g, unidade média 750g, fatia média 75g, pedaço 11g, copo médio 100g, porção guia alimenar 130g
+taco:165	Abacaxi, polpa, congelada	→ (no measures)
+taco:166	Abiu, cru	→ ibge:6808001	Abiu	score 3	unidade média 50g
+taco:167	Açaí, polpa, com xarope de guaraná e glucose	→ ibge:6601706	Açaí	score 999	concha 101g, copo médio 187g, copo americano 187g, copo grande 326g, tigela 202g
+taco:168	Açaí, polpa, congelada	→ ibge:6601706	Açaí	score 999	concha 101g, copo médio 187g, copo americano 187g, copo grande 326g, tigela 202g
+taco:169	Acerola, crua	→ ibge:6807701	Acerola	score 3	unidade 12g, copo americano 62.5g, copo médio 100g, copo grande 125g, porção 224g
+taco:170	Acerola, polpa, congelada	→ (no measures)
+taco:171	Ameixa, calda, enlatada	→ ibge:6804301	Ameixa	score 2.5	unidade pequena 34g, unidade média 42g, colher de sopa 25g, copo médio 100g, copo grande 125g, porção 30g
+taco:172	Ameixa, crua	→ ibge:6804301	Ameixa	score 3	unidade pequena 34g, unidade média 42g, colher de sopa 25g, copo médio 100g, copo grande 125g, porção 30g
+taco:173	Ameixa, em calda, enlatada, drenada	→ (no measures)
+taco:174	Atemóia, crua	→ (no measures)
+taco:175	Banana, da terra, crua	→ ibge:6801101	Banana (ouro, prata, d'água, da terra)	score 3	unidade 75g, colher de sopa 24g, colher de servir 64g, concha 128g, fatia 26g, pedaço 16g
+taco:176	Banana, doce em barra	→ (no measures)
+taco:177	Banana, figo, crua	→ (no measures)
+taco:178	Banana, maçã, crua	→ (no measures)
+taco:179	Banana, nanica, crua	→ (no measures)
+taco:180	Banana, ouro, crua	→ ibge:6801101	Banana (ouro, prata, d'água, da terra)	score 3	unidade 75g, colher de sopa 24g, colher de servir 64g, concha 128g, fatia 26g, pedaço 16g
+taco:181	Banana, pacova, crua	→ (no measures)
+taco:182	Banana, prata, crua	→ ibge:6801101	Banana (ouro, prata, d'água, da terra)	score 4	unidade 75g, colher de sopa 24g, colher de servir 64g, concha 128g, fatia 26g, pedaço 16g
+taco:183	Cacau, cru	→ ibge:6806301	Cacau	score 3	unidade 91.2g, copo médio 100g, copo grande 125g
+taco:184	Cajá-Manga, cru	→ ibge:6804601	Cajá manga	score 6	unidade pequena 40g, unidade média 55g, copo americano 62.5g, copo de requeijão 100g, copo médio 100g, copo grande 125g
+taco:185	Cajá, polpa, congelada	→ (no measures)
+taco:186	Caju, cru	→ ibge:6804401	Caju	score 3	unidade pequena 80g, unidade média 90g, copo americano 62.5g, copo médio 100g, copo tulipa 120.8g, copo grande 125g
+taco:187	Caju, polpa, congelada	→ (no measures)
+taco:188	Caju, suco concentrado, envasado	→ (ingredient, no measures)
+taco:189	Caqui, chocolate, cru	→ ibge:6802801	Caqui	score 2.5	unidade pequena 85g, unidade média 110g
+taco:190	Carambola, crua	→ ibge:6804801	Carambola	score 3	unidade média 75g, fatia média 6g, copo americano 62.5g, copo médio 100g, copo grande 125g, porção 130g
+taco:191	Ciriguela, crua	→ (no measures)
+taco:192	Cupuaçu, cru	→ ibge:6807301	Cupuaçu	score 3	colher de sopa 20g, copo médio 100g, copo tulipa 120.8g, copo grande 125g, porção 60g, 3 colheres de sopa 60g
+taco:193	Cupuaçu, polpa, congelada	→ (no measures)
+taco:194	Figo, cru	→ ibge:6802901	Figo	score 3	unidade média 55g, porção 60g
+taco:195	Figo, enlatado, em calda	→ (no measures)
+taco:196	Fruta-pão, crua	→ ibge:6805901	Fruta pão	score 6	fatia média 70g, porção 35g, 4 colheres de sopa 70g
+taco:197	Goiaba, branca, com casca, crua	→ (no measures)
+taco:198	Goiaba, doce em pasta	→ (no measures)
+taco:199	Goiaba, doce, cascão	→ (no measures)
+taco:200	Goiaba, vermelha, com casca, crua	→ (no measures)
+taco:201	Graviola, crua	→ (no measures)
+taco:202	Graviola, polpa, congelada	→ (no measures)
+taco:203	Jabuticaba, crua	→ (no measures)
+taco:204	Jaca, crua	→ ibge:6804101	Jaca	score 3	copo médio 100g, porção 132g, bago 12g
+taco:205	Jambo, cru	→ ibge:6805301	Jambo	score 3	unidade média 40g
+taco:206	Jamelão, cru	→ (no measures)
+taco:207	Kiwi, cru	→ ibge:6807801	Kiwi	score 3	unidade média 94g, copo americano 62.5g, copo grande 125g, rodela 11g
+taco:208	Laranja, baía, crua	→ ibge:6801801	Laranja (pera, seleta, lima, da terra)	score 2.5	unidade pequena 90g, unidade média 180g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:209	Laranja, baía, suco	→ ibge:8500407	Suco de laranja	score 4.5	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:210	Laranja, da terra, crua	→ ibge:6801801	Laranja (pera, seleta, lima, da terra)	score 5	unidade pequena 90g, unidade média 180g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:211	Laranja, da terra, suco	→ ibge:8500407	Suco de laranja	score 4.5	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:212	Laranja, lima, crua	→ ibge:6801801	Laranja (pera, seleta, lima, da terra)	score 5	unidade pequena 90g, unidade média 180g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:213	Laranja, lima, suco	→ ibge:8500407	Suco de laranja	score 4.5	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:214	Laranja, pêra, crua	→ ibge:6801801	Laranja (pera, seleta, lima, da terra)	score 5	unidade pequena 90g, unidade média 180g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:215	Laranja, pêra, suco	→ ibge:8500407	Suco de laranja	score 999	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:216	Laranja, valência, crua	→ ibge:6801801	Laranja (pera, seleta, lima, da terra)	score 2.5	unidade pequena 90g, unidade média 180g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:217	Laranja, valência, suco	→ ibge:8500407	Suco de laranja	score 4.5	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:218	Limão, cravo, suco	→ (no measures)
+taco:219	Limão, galego, suco	→ ibge:6802001	Limão (comum, galego)	score 3.5	unidade 84g, porção 252g
+taco:220	Limão, tahiti, cru	→ ibge:6802001	Limão (comum, galego)	score 2.5	unidade 84g, porção 252g
+taco:221	Maçã, Argentina, com casca, crua	→ (no measures)
+taco:222	Maçã, Fuji, com casca, crua	→ (no measures)
+taco:223	Macaúba, crua	→ (no measures)
+taco:224	Mamão, doce em calda, drenado	→ (no measures)
+taco:225	Mamão, Formosa, cru	→ ibge:6803101	Mamão	score 2.5	unidade pequena 270g, unidade média 310g, colher de sopa cheia 40g, colher de servir cheia 70g, fatia média 170g, pedaço pequeno 120g
+taco:226	Mamão, Papaia, cru	→ ibge:6803101	Mamão	score 2.5	unidade pequena 270g, unidade média 310g, colher de sopa cheia 40g, colher de servir cheia 70g, fatia média 170g, pedaço pequeno 120g
+taco:227	Mamão verde, doce em calda, drenado	→ (no measures)
+taco:228	Manga, Haden, crua	→ ibge:6803201	Manga	score 2.5	fatia 22g, porção 110g, 2 fatias 44g, espada pequena 60g, espada média 140g
+taco:229	Manga, Palmer, crua	→ ibge:6803201	Manga	score 2.5	fatia 22g, porção 110g, 2 fatias 44g, espada pequena 60g, espada média 140g
+taco:230	Manga, polpa, congelada	→ (no measures)
+taco:231	Manga, Tommy Atkins, crua	→ (no measures)
+taco:232	Maracujá, cru	→ ibge:6803301	Maracujá	score 3	unidade média 45g, copo americano 62.5g, copo médio 100g, copo grande 125g
+taco:233	Maracujá, polpa, congelada	→ (no measures)
+taco:234	Maracujá, suco concentrado, envasado	→ (ingredient, no measures)
+taco:235	Melancia, crua	→ ibge:6803401	Melancia	score 3	fatia média 200g, pedaço médio 150g, copo americano 62.5g, copo médio 100g, copo grande 125g, porção 296g
+taco:236	Melão, cru	→ ibge:6803501	Melão	score 3	unidade média 660g, fatia média 90g, porção 230g
+taco:237	Mexerica, Murcote, crua	→ (no measures)
+taco:238	Mexerica, Rio, crua	→ (no measures)
+taco:239	Morango, cru	→ ibge:6805201	Morango	score 3	unidade pequena 7g, unidade média 12g, copo americano 62.5g, porção 120g, 10 unidades médias 120g
+taco:240	Nêspera, crua	→ ibge:6805801	Nespera	score 3	unidade média 27g
+taco:241	Pequi, cru	→ ibge:6806701	Pequi	score 3	parte comestível de 1 caroço de pequi 3.8g
+taco:242	Pêra, Park, crua	→ ibge:6803601	Pera	score 2.5	unidade média 130g
+taco:243	Pêra, Williams, crua	→ ibge:6803601	Pera	score 2.5	unidade média 130g
+taco:244	Pêssego, Aurora, cru	→ ibge:6803701	Pêssego	score 2.5	unidade pequena 32g, unidade média 60g, porção 226g, 1 unidade 80g
+taco:245	Pêssego, enlatado, em calda	→ (no measures)
+taco:246	Pinha, crua	→ (no measures)
+taco:247	Pitanga, crua	→ ibge:6806801	Pitanga	score 3	unidade 10g, copo americano 62.5g, copo médio 100g
+taco:248	Pitanga, polpa, congelada	→ (no measures)
+taco:249	Romã, crua	→ ibge:6807601	Romã	score 3	unidade pequena 70g
+taco:250	Tamarindo, cru	→ ibge:6806201	Tamarindo	score 3	unidade 8.1g, copo americano 62.5g, copo de requeijão 100g, copo médio 100g, copo grande 125g, porção 25g
+taco:251	Tangerina, Poncã, crua	→ ibge:6802201	Tangerina	score 2.5	unidade pequena 100g, unidade média 135g, copo americano 62.5g, copo médio 100g, copo grande 125g
+taco:252	Tangerina, Poncã, suco	→ (no measures)
+taco:253	Tucumã, cru	→ ibge:6601108	Tucuma	score 3	unidade média 11.7g
+taco:254	Umbu, cru	→ ibge:6807101	Umbu	score 3	unidade grande 33.3g, copo americano 62.5g, copo médio 100g, copo grande 125g
+taco:255	Umbu, polpa, congelada	→ (no measures)
+taco:256	Uva, Itália, crua	→ ibge:6803901	Uva	score 2.5	unidade pequena 4g, unidade média 8g, porção 99.2g, tigela 140g, cacho pequeno 170g
+taco:257	Uva, Rubi, crua	→ ibge:6803901	Uva	score 2.5	unidade pequena 4g, unidade média 8g, porção 99.2g, tigela 140g, cacho pequeno 170g
+taco:258	Uva, suco concentrado, envasado	→ (ingredient, no measures)
+taco:259	Azeite, de dendê	→ ibge:8400101	Azeite de oliva	score 2.5	colher de sopa 8g, porção 7.6g, colher de sobremesa 5g, colher de chá 2g, colher de café 1g, 2 colheres de sopa 16g
+taco:260	Azeite, de oliva, extra virgem	→ ibge:8400101	Azeite de oliva	score 6	colher de sopa 8g, porção 7.6g, colher de sobremesa 5g, colher de chá 2g, colher de café 1g, 2 colheres de sopa 16g
+taco:261	Manteiga, com sal	→ ibge:7901501	Manteiga com ou sem sal	score 5	colher de sopa cheia 32g, xícara de chá 155g, porção 9.8g, colher de sobremesa cheia 23g, colher de chá cheia 8g, ponta de faca 5g
+taco:262	Manteiga, sem sal	→ ibge:7901501	Manteiga com ou sem sal	score 8	colher de sopa cheia 32g, xícara de chá 155g, porção 9.8g, colher de sobremesa cheia 23g, colher de chá cheia 8g, ponta de faca 5g
+taco:263	Margarina, com óleo hidrogenado, com sal (65% de lipídeos)	→ (no measures)
+taco:264	Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)	→ ibge:7901602	Margarina com ou sem sal	score 4.5	colher de sopa cheia 32g, xícara de chá 155g, porção 9.8g, colher de sobremesa cheia 23g, colher de chá cheia 8g, ponta de faca 5g
+taco:265	Margarina, com óleo interesterificado, com sal (65%de lipídeos)	→ (no measures)
+taco:266	Margarina, com óleo interesterificado, sem sal (65% de lipídeos)	→ ibge:7901602	Margarina com ou sem sal	score 4.5	colher de sopa cheia 32g, xícara de chá 155g, porção 9.8g, colher de sobremesa cheia 23g, colher de chá cheia 8g, ponta de faca 5g
+taco:267	Óleo, de babaçu	→ ibge:8403201	Óleo nao especificado	score 3.5	colher de sopa 8g, porção 8g, colher de sobremesa 5g, colher de café 1g
+taco:268	Óleo, de canola	→ ibge:8403201	Óleo nao especificado	score 3.5	colher de sopa 8g, porção 8g, colher de sobremesa 5g, colher de café 1g
+taco:269	Óleo, de girassol	→ ibge:8403201	Óleo nao especificado	score 3.5	colher de sopa 8g, porção 8g, colher de sobremesa 5g, colher de café 1g
+taco:270	Óleo, de milho	→ ibge:8403201	Óleo nao especificado	score 3.5	colher de sopa 8g, porção 8g, colher de sobremesa 5g, colher de café 1g
+taco:271	Óleo, de pequi	→ ibge:8403201	Óleo nao especificado	score 3.5	colher de sopa 8g, porção 8g, colher de sobremesa 5g, colher de café 1g
+taco:272	Óleo, de soja	→ ibge:8400301	Óleo de soja	score 6	colher de sopa 8g, colher de chá 2g, colher de café 1g, 4 colheres de sopa 32g
+taco:273	Abadejo, filé, congelado, assado	→ (no measures)
+taco:274	Abadejo, filé, congelado, cozido	→ (no measures)
+taco:275	Abadejo, filé, congelado, cru	→ (raw ingredient with cooked sibling)
+taco:276	Abadejo, filé, congelado, grelhado	→ (no measures)
+taco:277	Atum, conserva em óleo	→ ibge:7703402	Atum em conserva	score 3.5	colher de sopa cheia 16g, porção 112g, colher de sobremesa cheia 10g, lata 135g
+taco:278	Atum, fresco, cru	→ (no measures)
+taco:279	Bacalhau, salgado, cru	→ (raw ingredient with cooked sibling)
+taco:280	Bacalhau, salgado, refogado	→ ibge:7270401-refogado_a	Bacalhau, refogado	score 3.5	colher de sopa cheia 20g, 2 colheres de arroz cheia desfiado 110g
+taco:281	Cação, posta, com farinha de trigo, frita	→ (ingredient, no measures)
+taco:282	Cação, posta, cozida	→ (no measures)
+taco:283	Cação, posta, crua	→ (no measures)
+taco:284	Camarão, Rio Grande, grande, cozido	→ (no measures)
+taco:285	Camarão, Rio Grande, grande, cru	→ (raw ingredient with cooked sibling)
+taco:286	Camarão, Sete Barbas, sem cabeça, com casca, frito	→ (no measures)
+taco:287	Caranguejo, cozido	→ (no measures)
+taco:288	Corimba, cru	→ (no measures)
+taco:289	Corimbatá, assado	→ (no measures)
+taco:290	Corimbatá, cozido	→ (no measures)
+taco:291	Corvina de água doce, crua	→ (no measures)
+taco:292	Corvina do mar, crua	→ (no measures)
+taco:293	Corvina grande, assada	→ (no measures)
+taco:294	Corvina grande, cozida	→ (no measures)
+taco:295	Dourada de água doce, fresca	→ (no measures)
+taco:296	Lambari, congelado, cru	→ (raw ingredient with cooked sibling)
+taco:297	Lambari, congelado, frito	→ (no measures)
+taco:298	Lambari, fresco, cru	→ (no measures)
+taco:299	Manjuba, com farinha de trigo, frita	→ (ingredient, no measures)
+taco:300	Manjuba, frita	→ (no measures)
+taco:301	Merluza, filé, assado	→ (no measures)
+taco:302	Merluza, filé, cru	→ (raw ingredient with cooked sibling)
+taco:303	Merluza, filé, frito	→ (no measures)
+taco:304	Pescada, branca, crua	→ (no measures)
+taco:305	Pescada, branca, frita	→ (no measures)
+taco:306	Pescada, filé, com farinha de trigo, frito	→ (ingredient, no measures)
+taco:307	Pescada, filé, cru	→ (raw ingredient with cooked sibling)
+taco:308	Pescada, filé, frito	→ (no measures)
+taco:309	Pescada, filé, molho escabeche	→ (no measures)
+taco:310	Pescadinha, crua	→ (no measures)
+taco:311	Pintado, assado	→ (no measures)
+taco:312	Pintado, cru	→ (raw ingredient with cooked sibling)
+taco:313	Pintado, grelhado	→ (no measures)
+taco:314	Porquinho, cru	→ (no measures)
+taco:315	Salmão, filé, com pele, fresco, grelhado	→ (no measures)
+taco:316	Salmão, sem pele, fresco, cru	→ (raw ingredient with cooked sibling)
+taco:317	Salmão, sem pele, fresco, grelhado	→ (no measures)
+taco:318	Sardinha, assada	→ (no measures)
+taco:319	Sardinha, conserva em óleo	→ ibge:7703002	Sardinha em conserva	score 6	unidade média 41.5g, colher de sopa cheia 16g, porção 41.5g, colher de sobremesa cheia 10g, 2 colheres de sopa cheias 32g, lata 125g
+taco:320	Sardinha, frita	→ (no measures)
+taco:321	Sardinha, inteira, crua	→ (no measures)
+taco:322	Tucunaré, filé, congelado, cru	→ (no measures)
+taco:323	Apresuntado	→ ibge:8103601	Apresuntado	score 4	fatia média 15g
+taco:324	Caldo de carne, tablete	→ ibge:8503202	Caldo de carne	score 5.5	colher de sopa cheia 20g, concha média cheia 130g, prato raso 325g, prato fundo 520g, 2 colheres de sopa cheias 40g, cumbuca 300g
+taco:325	Caldo de galinha, tablete	→ (no measures)
+taco:326	Carne, bovina, acém, moído, cozido	→ ibge:7109101	Carne bovina	score 5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:327	Carne, bovina, acém, moído, cru	→ (raw ingredient with cooked sibling)
+taco:328	Carne, bovina, acém, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:329	Carne, bovina, acém, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:330	Carne, bovina, almôndegas, cruas	→ ibge:7109101	Carne bovina	score 6	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:331	Carne, bovina, almôndegas, fritas	→ ibge:7109101	Carne bovina	score 6	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:332	Carne, bovina, bucho, cozido	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:333	Carne, bovina, bucho, cru	→ (raw ingredient with cooked sibling)
+taco:334	Carne, bovina, capa de contra-filé, com gordura, crua	→ ibge:7109101	Carne bovina	score 4	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:335	Carne, bovina, capa de contra-filé, com gordura, grelhada	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:336	Carne, bovina, capa de contra-filé, sem gordura, crua	→ ibge:7109101	Carne bovina	score 3.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:337	Carne, bovina, capa de contra-filé, sem gordura, grelhada	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 4.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:338	Carne, bovina, charque, cozido	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:339	Carne, bovina, charque, cru	→ (raw ingredient with cooked sibling)
+taco:340	Carne, bovina, contra-filé, à milanesa	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:341	Carne, bovina, contra-filé de costela, cru	→ (raw ingredient with cooked sibling)
+taco:342	Carne, bovina, contra-filé de costela, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:343	Carne, bovina, contra-filé, com gordura, cru	→ (raw ingredient with cooked sibling)
+taco:344	Carne, bovina, contra-filé, com gordura, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:345	Carne, bovina, contra-filé, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:346	Carne, bovina, contra-filé, sem gordura, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:347	Carne, bovina, costela, assada	→ ibge:7109101-assado_a	Carne bovina, assado	score 8	unidade 46g, unidade média 100g, colher de sopa cheia 30g, colher de servir cheia 70g, fatia média 90g, pedaço médio 40g
+taco:348	Carne, bovina, costela, crua	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:349	Carne, bovina, coxão duro, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:350	Carne, bovina, coxão duro, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:351	Carne, bovina, coxão mole, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:352	Carne, bovina, coxão mole, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:353	Carne, bovina, cupim, assado	→ ibge:7109101-assado_a	Carne bovina, assado	score 6.5	unidade 46g, unidade média 100g, colher de sopa cheia 30g, colher de servir cheia 70g, fatia média 90g, pedaço médio 40g
+taco:354	Carne, bovina, cupim, cru	→ (raw ingredient with cooked sibling)
+taco:355	Carne, bovina, fígado, cru	→ (raw ingredient with cooked sibling)
+taco:356	Carne, bovina, fígado, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 6.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:357	Carne, bovina, filé mingnon, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:358	Carne, bovina, filé mingnon, sem gordura, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:359	Carne, bovina, flanco, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:360	Carne, bovina, flanco, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:361	Carne, bovina, fraldinha, com gordura, cozida	→ ibge:7109101	Carne bovina	score 5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:362	Carne, bovina, fraldinha, com gordura, crua	→ ibge:7109101	Carne bovina	score 5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:363	Carne, bovina, lagarto, cozido	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:364	Carne, bovina, lagarto, cru	→ (raw ingredient with cooked sibling)
+taco:365	Carne, bovina, língua, cozida	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:366	Carne, bovina, língua, crua	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:367	Carne, bovina, maminha, crua	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:368	Carne, bovina, maminha, grelhada	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 6.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:369	Carne, bovina, miolo de alcatra, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:370	Carne, bovina, miolo de alcatra, sem gordura, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:371	Carne, bovina, músculo, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:372	Carne, bovina, músculo, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:373	Carne, bovina, paleta, com gordura, crua	→ ibge:7109101	Carne bovina	score 5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:374	Carne, bovina, paleta, sem gordura, cozida	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:375	Carne, bovina, paleta, sem gordura, crua	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:376	Carne, bovina, patinho, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:377	Carne, bovina, patinho, sem gordura, grelhado	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:378	Carne, bovina, peito, sem gordura, cozido	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:379	Carne, bovina, peito, sem gordura, cru	→ (raw ingredient with cooked sibling)
+taco:380	Carne, bovina, picanha, com gordura, crua	→ ibge:7109101	Carne bovina	score 5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:381	Carne, bovina, picanha, com gordura, grelhada	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 6	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:382	Carne, bovina, picanha, sem gordura, crua	→ ibge:7109101	Carne bovina	score 4.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:383	Carne, bovina, picanha, sem gordura, grelhada	→ ibge:7109101-grelhado_a_brasa_churrasco	Carne bovina, grelhado	score 5.5	unidade 46g, unidade média 100g, colher de servir cheia 70g, fatia média 90g, pedaço médio 35g, porção 75g
+taco:384	Carne, bovina, seca, cozida	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:385	Carne, bovina, seca, crua	→ ibge:7109101	Carne bovina	score 5.5	unidade média 100g, colher de servir cheia 70g, pedaço médio 35g, porção 75g, 2 colheres de arroz cheias 140g
+taco:386	Coxinha de frango, frita	→ ibge:8500205	Coxinha	score 999	unidade pequena 20g, unidade média 50g
+taco:387	Croquete, de carne, cru	→ (raw ingredient with cooked sibling)
+taco:388	Croquete, de carne, frito	→ ibge:8500203	Croquete	score 4	unidade pequena 10g, unidade grande 55g, 2 unidades grandes 110g
+taco:389	Empada de frango, pré-cozida, assada	→ ibge:8500206	Empada (queijo, carne, camarão)	score 3.5	unidade pequena 12g, unidade 55g, fatia média 110g
+taco:390	Empada, de frango, pré-cozida	→ ibge:8500206	Empada (queijo, carne, camarão)	score 4.5	unidade pequena 12g, unidade 55g, fatia média 110g
+taco:391	Frango, asa, com pele, crua	→ (no measures)
+taco:392	Frango, caipira, inteiro, com pele, cozido	→ (no measures)
+taco:393	Frango, caipira, inteiro, sem pele, cozido	→ (no measures)
+taco:394	Frango, coração, cru	→ (raw ingredient with cooked sibling)
+taco:395	Frango, coração, grelhado	→ ibge:7801202-grelhado_a_brasa_churrasco	Coração de frango, grelhado	score 7	unidade média 5g, unidade 46g, colher de sopa cheia 50g, porção 100g
+taco:396	Frango, coxa, com pele, assada	→ ibge:7800103-assado_a	Frango inteiro, assado	score 3.5	porção 100g, asa média 40g, coxa grande 55g, sobrecoxa média 65g, peito médio 180g
+taco:397	Frango, coxa, com pele, crua	→ ibge:7800302	Frango em pedaços	score 2.5	unidade 46g, porção 100g, coxa grande 55g
+taco:398	Frango, coxa, sem pele, cozida	→ (no measures)
+taco:399	Frango, coxa, sem pele, crua	→ (no measures)
+taco:400	Frango, fígado, cru	→ ibge:7800103-cru_a	Frango inteiro, cru	score 2.5	coxa grande 55g
+taco:401	Frango, filé, à milanesa	→ ibge:7800402	Filé de frango	score 6.5	filé médio 100g
+taco:402	Frango, inteiro, com pele, cru	→ ibge:7800103-cru_a	Frango inteiro, cru	score 5.5	coxa grande 55g
+taco:403	Frango, inteiro, sem pele, assado	→ ibge:7800103-assado_a	Frango inteiro, assado	score 5	porção 100g, asa média 40g, coxa grande 55g, sobrecoxa média 65g, peito médio 180g
+taco:404	Frango, inteiro, sem pele, cozido	→ (no measures)
+taco:405	Frango, inteiro, sem pele, cru	→ (raw ingredient with cooked sibling)
+taco:406	Frango, peito, com pele, assado	→ ibge:7800401-assado_a	Peito de galinha ou frango, assado	score 5.5	unidade 46g, porção 100g, 4 colheres de sopa cheia desfiado 80g, filé médio 100g, peito médio 180g
+taco:407	Frango, peito, com pele, cru	→ (raw ingredient with cooked sibling)
+taco:408	Frango, peito, sem pele, cozido	→ ibge:7800401-grelhado_a_brasa_churrasco	Peito de galinha ou frango, grelhado	score 999	unidade 46g, porção 100g, filé médio 100g, peito médio 180g
+taco:409	Frango, peito, sem pele, cru	→ ibge:7800401-cru_a	Peito de galinha ou frango, cru	score 999	peito médio 180g
+taco:410	Frango, peito, sem pele, grelhado	→ ibge:7800401-grelhado_a_brasa_churrasco	Peito de galinha ou frango, grelhado	score 5	unidade 46g, porção 100g, filé médio 100g, peito médio 180g
+taco:411	Frango, sobrecoxa, com pele, assada	→ ibge:7800103-assado_a	Frango inteiro, assado	score 3.5	porção 100g, asa média 40g, coxa grande 55g, sobrecoxa média 65g, peito médio 180g
+taco:412	Frango, sobrecoxa, com pele, crua	→ (no measures)
+taco:413	Frango, sobrecoxa, sem pele, assada	→ ibge:7800103-assado_a	Frango inteiro, assado	score 3	porção 100g, asa média 40g, coxa grande 55g, sobrecoxa média 65g, peito médio 180g
+taco:414	Frango, sobrecoxa, sem pele, crua	→ (no measures)
+taco:415	Hambúrguer, bovino, cru	→ ibge:8100502-frito_a	Hambúrguer de carne bovina, frito	score 999	unidade média 56g
+taco:416	Hambúrguer, bovino, frito	→ ibge:8100502-frito_a	Hambúrguer de carne bovina, frito	score 999	unidade média 56g
+taco:417	Hambúrguer, bovino, grelhado	→ ibge:8100502-grelhado_a_brasa_churrasco	Hambúrguer de carne bovina, grelhado	score 999	unidade média 56g
+taco:418	Lingüiça, frango, crua	→ ibge:8102204	Linguiça (suína, bovina, mista)	score 2.5	unidade 46g, colher de sopa cheia picada 22g, colher de servir cheia picada 36g, porção 50g, gomo/fatia média 10g, gomo 60g
+taco:419	Lingüiça, frango, frita	→ ibge:8102207-frito_a	Linguiça de frango, frito	score 6	porção 50g, gomo/fatia média 10g, gomo 60g
+taco:420	Lingüiça, frango, grelhada	→ ibge:8102207-grelhado_a_brasa_churrasco	Linguiça de frango, grelhado	score 6	gomo/fatia média 10g, gomo 60g
+taco:421	Lingüiça, porco, crua	→ ibge:8102204	Linguiça (suína, bovina, mista)	score 4	unidade 46g, colher de sopa cheia picada 22g, colher de servir cheia picada 36g, porção 50g, gomo/fatia média 10g, gomo 60g
+taco:422	Lingüiça, porco, frita	→ ibge:8102204	Linguiça (suína, bovina, mista)	score 4	unidade 46g, colher de sopa cheia picada 22g, colher de servir cheia picada 36g, porção 50g, gomo/fatia média 10g, gomo 60g
+taco:423	Lingüiça, porco, grelhada	→ ibge:8102204	Linguiça (suína, bovina, mista)	score 4	unidade 46g, colher de sopa cheia picada 22g, colher de servir cheia picada 36g, porção 50g, gomo/fatia média 10g, gomo 60g
+taco:424	Mortadela	→ ibge:8102601	Mortadela	score 999	fatia média 15g, porção 62g
+taco:425	Peru, congelado, assado	→ ibge:7801702-assado_a	Peru em pedaço nao especificado, assado	score 2.5	fatia média 32g, porção 96g
+taco:426	Peru, congelado, cru	→ (raw ingredient with cooked sibling)
+taco:427	Porco, bisteca, crua	→ (no measures)
+taco:428	Porco, bisteca, frita	→ (no measures)
+taco:429	Porco, bisteca, grelhada	→ (no measures)
+taco:430	Porco, costela, assada	→ (no measures)
+taco:431	Porco, costela, crua	→ (no measures)
+taco:432	Porco, lombo, assado	→ (no measures)
+taco:433	Porco, lombo, cru	→ (raw ingredient with cooked sibling)
+taco:434	Porco, orelha, salgada, crua	→ (no measures)
+taco:435	Porco, pernil, assado	→ (no measures)
+taco:436	Porco, pernil, cru	→ (raw ingredient with cooked sibling)
+taco:437	Porco, rabo, salgado, cru	→ (no measures)
+taco:438	Presunto, com capa de gordura	→ ibge:8102901	Presunto	score 999	fatia média 15g
+taco:439	Presunto, sem capa de gordura	→ ibge:8102901	Presunto	score 999	fatia média 15g
+taco:440	Quibe, assado	→ ibge:8500211	Quibe	score 3	unidade pequena 12g, unidade média 50g
+taco:441	Quibe, cru	→ (raw ingredient with cooked sibling)
+taco:442	Quibe, frito	→ ibge:8500211	Quibe	score 3	unidade pequena 12g, unidade média 50g
+taco:443	Salame	→ ibge:8102701	Salame	score 4	fatia média 20g, porção 62g
+taco:444	Toucinho, cru	→ (raw ingredient with cooked sibling)
+taco:445	Toucinho, frito	→ (no measures)
+taco:446	Bebida láctea, pêssego	→ ibge:7901303	Bebida lactea	score 4.5	copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g
+taco:447	Creme de Leite	→ ibge:7901001	Creme de leite	score 7	colher de sopa rasa 15g, copo americano 150g, copo de requeijão 240g, copo médio 240g, colher de sobremesa cheia 20g, colher de chá cheia 5g
+taco:448	Iogurte, natural	→ ibge:7901204	Iogurte natural	score 6	unidade 200g, colher de sopa rasa 15g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:449	Iogurte, natural, desnatado	→ ibge:7901204	Iogurte natural	score 7	unidade 200g, colher de sopa rasa 15g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:450	Iogurte, sabor abacaxi	→ ibge:7901201	Iogurte de qualquer sabor	score 3.5	unidade 200g, colher de sopa rasa 15g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g
+taco:451	Iogurte, sabor morango	→ ibge:7901201	Iogurte de qualquer sabor	score 3.5	unidade 200g, colher de sopa rasa 15g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g
+taco:452	Iogurte, sabor pêssego	→ ibge:7901201	Iogurte de qualquer sabor	score 3.5	unidade 200g, colher de sopa rasa 15g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g
+taco:453	Leite, condensado	→ ibge:7900901	Leite condensado	score 999	colher de sopa 15g, copo médio 240g, copo grande 300g, xícara de café 50g, xícara de chá 200g, colher de sobremesa 10g
+taco:454	Leite, de cabra	→ ibge:7900301	Leite de cabra	score 5	copo americano 150g, copo médio 240g, xícara de café 50g, xícara de chá 200g
+taco:455	Leite, de vaca, achocolatado	→ ibge:7903102	Leite achocolatado	score 4.5	copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g
+taco:456	Leite, de vaca, desnatado, pó	→ (ingredient, no measures)
+taco:457	Leite, de vaca, desnatado, UHT	→ ibge:7903601	Leite de vaca desnatado	score 6.5	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g, xícara de café 50g
+taco:458	Leite, de vaca, integral	→ ibge:7900101	Leite de vaca integral	score 7	copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g
+taco:459	Leite, de vaca, integral, pó	→ (ingredient, no measures)
+taco:460	Leite, fermentado	→ ibge:7901304	Leite fermentado	score 7	unidade 80g, copo de requeijão 240g, copo médio 240g, copo grande 300g
+taco:461	Queijo, minas, frescal	→ ibge:7901901	Queijo de reino	score 999	fatia média 45g
+taco:462	Queijo, minas, meia cura	→ ibge:7901901	Queijo de reino	score 999	fatia média 45g
+taco:463	Queijo, mozarela	→ ibge:7901801	Queijo muçarela	score 999	fatia média 20g, porção 45g
+taco:464	Queijo, parmesão	→ ibge:7902403	Queijo ralado	score 4	colher de sopa cheia ralado 15g, xícara de chá 74g, porção 30g, colher de sobremesa cheia ralado 8g, colher de chá cheia ralado 4g, 2 colheres de sopa cheias ralado 30g
+taco:465	Queijo, pasteurizado	→ ibge:7903001	Queijo nao especificado	score 3.5	unidade 46g, fatia média 20g, porção 45g, ponta de faca 6g
+taco:466	Queijo, petit suisse, morango	→ ibge:7903001	Queijo nao especificado	score 2.5	unidade 46g, fatia média 20g, porção 45g, ponta de faca 6g
+taco:467	Queijo, prato	→ ibge:7901701	Queijo prato	score 999	fatia média 15g, porção 30g
+taco:468	Maria mole	→ ibge:6903001	Maria mole	score 5	fatia pequena 90g, fatia média 130g
+taco:469	Queijo, ricota	→ ibge:7902201	Queijo ricota	score 7	colher de sopa cheia 44g, fatia média 35g, porção 100g, ponta de faca 6g
+taco:470	Bebida isotônica, sabores variados	→ (no measures)
+taco:471	Café, infusão 10%	→ ibge:8501302	Café	score 999	copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g
+taco:472	Cana, aguardente 1	→ ibge:6802501	Cana de açúcar	score 2.5	pedaço de 3cm 19g
+taco:473	Cana, caldo de	→ ibge:8202001	Caldo de cana	score 5	concha 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g, caneca 300g
+taco:474	Cerveja, pilsen 2	→ ibge:8203401	Levedo de cerveja	score 2.5	colher de sopa cheia 27g
+taco:475	Chá, erva-doce, infusão 5%	→ ibge:8206301	Chá (preto, camomila, erva cidreira, capim limão)	score 999	unidade 240g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g
+taco:476	Chá, mate, infusão 5%	→ ibge:8206301	Chá (preto, camomila, erva cidreira, capim limão)	score 999	unidade 240g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g
+taco:477	Chá, preto, infusão 5%	→ ibge:8206301	Chá (preto, camomila, erva cidreira, capim limão)	score 999	unidade 240g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g
+taco:478	Coco, água de	→ ibge:8202101	Água de coco	score 999	unidade 340g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g, copo grande 300g
+taco:479	Refrigerante, tipo água tônica	→ (no measures)
+taco:480	Refrigerante, tipo cola	→ ibge:8200101	Refrigerante de cola tradicional	score 4	unidade pequena 150g, unidade 240g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g
+taco:481	Refrigerante, tipo guaraná	→ ibge:8200301	Refrigerante de guaraná tradicional	score 4	unidade pequena 150g, unidade 240g, copo americano 150g, copo de requeijão 240g, copo médio 240g, copo tulipa 290g
+taco:482	Refrigerante, tipo laranja	→ ibge:8203501	Refrigerante nao especificado	score 2.5	unidade pequena 150g, unidade 240g, copo de cafezinho 50g, copo americano 150g, copo de requeijão 240g, copo médio 240g
+taco:483	Refrigerante, tipo limão	→ ibge:8207601	Refrigerante de limão diet	score 4	copo americano 150g, copo de requeijão 240g, copo médio 240g, copo grande 300g, garrafa (200 ml) 200g, garrafa (300 ml) 300g
+taco:484	Omelete, de queijo	→ ibge:7803301-frito_a	Ovo de galinha, frito	score 999	unidade média 50g, colher de sopa cheia 15g, colher de servir cheia 45g, fatia média 10g, escumadeira média rasa 45g, porção 50g
+taco:485	Ovo, de codorna, inteiro, cru	→ (no measures)
+taco:486	Ovo, de galinha, clara, cozida/10minutos	→ ibge:7803301	Ovo de galinha	score 6	unidade média 45g
+taco:487	Ovo, de galinha, gema, cozida/10minutos	→ ibge:7803301	Ovo de galinha	score 6	unidade média 45g
+taco:488	Ovo, de galinha, inteiro, cozido/10minutos	→ MANUAL TARGET MISSING ibge:7803301-cru_a
+taco:488	Ovo, de galinha, inteiro, cozido/10minutos	→ ibge:7803301	Ovo de galinha	score 6	unidade média 45g
+taco:489	Ovo, de galinha, inteiro, cru	→ MANUAL TARGET MISSING ibge:7803301-cru_a
+taco:489	Ovo, de galinha, inteiro, cru	→ (raw ingredient with cooked sibling)
+taco:490	Ovo, de galinha, inteiro, frito	→ ibge:7803301-frito_a	Ovo de galinha, frito	score 999	unidade média 50g, colher de sopa cheia 15g, colher de servir cheia 45g, fatia média 10g, escumadeira média rasa 45g, porção 50g
+taco:491	Achocolatado, pó	→ (ingredient, no measures)
+taco:492	Açúcar, cristal	→ ibge:6906602	Açúcar	score 5	colher de sopa cheia 24g, copo pequeno nivelado 160g, copo duplo nivelado 219g, porção 28g, colher de sobremesa cheia 16g, colher de chá cheia 5g
+taco:493	Açúcar, mascavo	→ ibge:6900304	Açúcar mascavo	score 7	colher de sopa cheia 19g
+taco:494	Açúcar, refinado	→ ibge:6906602	Açúcar	score 5	colher de sopa cheia 24g, copo pequeno nivelado 160g, copo duplo nivelado 219g, porção 28g, colher de sobremesa cheia 16g, colher de chá cheia 5g
+taco:495	Chocolate, ao leite	→ ibge:8507601	Chocolate	score 5	unidade 170g, porção 25g, tablete 6.3g
+taco:496	Chocolate, ao leite, com castanha do Pará	→ ibge:8507601	Chocolate	score 4.5	unidade 170g, porção 25g, tablete 6.3g
+taco:497	Chocolate, ao leite, dietético	→ ibge:8507601	Chocolate	score 4.5	unidade 170g, porção 25g, tablete 6.3g
+taco:498	Chocolate, meio amargo	→ ibge:8507601	Chocolate	score 3	unidade 170g, porção 25g, tablete 6.3g
+taco:499	Cocada branca	→ ibge:6903101	Cocada	score 3.5	unidade média 70g, colher de sopa cheia 50g, colher de sobremesa cheia 30g, passada de faca 12.5g
+taco:500	Doce, de abóbora, cremoso	→ ibge:6904201	Doce a base de leite	score 2.5	colher de sopa cheia 40g, fatia média 130g, copo pequeno 220g, copo duplo 270g, porção 50g, colher de sobremesa cheia 25g
+taco:501	Doce, de leite, cremoso	→ ibge:6904201	Doce a base de leite	score 7	colher de sopa cheia 40g, fatia média 130g, copo pequeno 220g, copo duplo 270g, porção 50g, colher de sobremesa cheia 25g
+taco:502	Geléia, mocotó, natural	→ ibge:6901101	Geleia de mocotó	score 8	colher de sopa cheia 34g, copo americano 200g, copo 200g, porção rótulo 20g
+taco:503	Glicose de milho	→ (no measures)
+taco:504	Maria mole	→ ibge:6903001	Maria mole	score 5	fatia pequena 90g, fatia média 130g
+taco:505	Maria mole, coco queimado	→ ibge:6903001	Maria mole	score 4	fatia pequena 90g, fatia média 130g
+taco:506	Marmelada	→ ibge:6901206	Marmelada	score 4	fatia média 60g, porção 45g, passada de faca 12.5g
+taco:507	Mel, de abelha	→ ibge:6901602	Mel	score 5	colher de sopa 15g, copo médio 240g, xícara de café 50g, xícara de chá 200g, prato raso 150g, porção 37.5g
+taco:508	Melado	→ ibge:6901501	Melado	score 3	colher de sopa 15g, copo americano 150g, colher de sobremesa 9g, colher de chá 3g, colher de café 2g, passada de faca 12.5g
+taco:509	Quindim	→ ibge:6904105	Quindim	score 4	unidade pequena 20g, unidade média 35g
+taco:510	Rapadura	→ ibge:6900401	Rapadura	score 4	pedaço médio 55g, porção 27g
+taco:511	Café, pó, torrado	→ (ingredient, no measures)
+taco:512	Capuccino, pó	→ (ingredient, no measures)
+taco:513	Fermento em pó, químico	→ (ingredient, no measures)
+taco:514	Fermento, biológico, levedura, tablete	→ (ingredient, no measures)
+taco:515	Gelatina, sabores variados, pó	→ (ingredient, no measures)
+taco:516	Sal, dietético	→ (no measures)
+taco:517	Sal, grosso	→ (no measures)
+taco:518	Shoyu	→ ibge:7003604	Shoyu	score 3	colher de sopa 6g, 2 colheres de sopa 12g
+taco:519	Tempero a base de sal	→ (no measures)
+taco:520	Azeitona, preta, conserva	→ (no measures)
+taco:521	Azeitona, verde, conserva	→ ibge:7700101	Azeitona	score 2.5	unidade média verde 4g, colher de sopa 25g, copo pequeno 132g, porção rótulo 20g, colher de sobremesa 14g, punhado 45g
+taco:522	Chantilly, spray, com gordura vegetal	→ ibge:7901101	Chantilly	score 2.5	colher de sopa cheia 25g, porção rótulo 30g
+taco:523	Leite, de coco	→ ibge:7003801	Leite de coco	score 7	colher de sopa 20g, copo americano 150g, copo grande 300g, xícara de café 50g, 4 colheres de sopa 80g
+taco:524	Maionese, tradicional com ovos	→ (no measures)
+taco:525	Acarajé	→ ibge:8500209	Acarajé	score 4	unidade média 100g
+taco:526	Arroz carreteiro	→ ibge:8579002	Arroz carreteiro	score 6	colher de servir cheia 60g, prato fundo raso 100g, prato fundo cheio 200g, porção 180g, 2 colheres de arroz cheia 120g
+taco:527	Baião de dois, arroz e feijão-de-corda	→ ibge:8503501	Baião de dois	score 7	colher de sopa 21g, colher de servir 55g, concha 95g, escumadeira média 111g, 2 colheres de sopa 42g, 2 escumadeiras média 222g
+taco:528	Barreado	→ (no measures)
+taco:529	Bife à cavalo, com contra filé	→ (no measures)
+taco:530	Bolinho de arroz	→ ibge:8500228	Bolinho de aipim	score 2.5	unidade média 45g
+taco:531	Camarão à baiana	→ ibge:7260101	Camarão	score 3.5	porção 190g
+taco:532	Charuto, de repolho	→ ibge:8505201	Charuto de repolho	score 6	unidade 30g
+taco:533	Cuscuz, de milho, cozido com sal	→ ibge:6902901	Cuscuz	score 999	colher de sopa 12g, fatia média 180g, pedaço médio 135g, porção 42g, 2 colheres de sopa 24g, 4 colheres de sopa 48g
+taco:534	Cuscuz, paulista	→ ibge:8505801	Cuscuz paulista	score 5	colher de sopa cheia 35g, colher de servir cheia 60g, pedaço médio 150g, prato raso 300g, prato fundo 500g
+taco:535	Cuxá, molho	→ (no measures)
+taco:536	Dobradinha	→ ibge:7102402	Dobradinha fresca	score 3	colher de servir cheia 70g, concha 150g, porção 200g
+taco:537	Estrogonofe de carne	→ (no measures)
+taco:538	Estrogonofe de frango	→ (no measures)
+taco:539	Feijão tropeiro mineiro	→ ibge:8506101	Feijão tropeiro	score 5.5	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, 2 colheres de arroz cheia 70g, 2 conchas média cheias 280g
+taco:540	Feijoada	→ ibge:7701901	Feijoada	score 999	colher de sopa cheia 35g, colher de servir cheia 70g, concha média cheia 225g, porção rótulo 120g, lata 830g
+taco:541	Frango, com açafrão	→ ibge:7800302	Frango em pedaços	score 2.5	unidade 46g, porção 100g, coxa grande 55g
+taco:542	Macarrão, molho bolognesa	→ ibge:6503401-molho_vermelho	Macarrão, ao molho vermelho	score 999	colher de sopa cheia 25g, colher de servir cheia 50g, escumadeira média cheia 110g, pegador 110g, prato raso raso 200g, prato raso cheio 320g
+taco:543	Maniçoba	→ ibge:8507201	Manicoba	score 3	colher de servir cheia 70g, concha média cheia 225g
+taco:544	Quibebe	→ ibge:8506701	Quibebe	score 4	colher de sopa cheia 35g, escumadeira média cheia 100g, colher de sobremesa cheia 24g
+taco:545	Salada, de legumes, com maionese	→ ibge:8500802	Salada de maionese	score 8	colher de sopa cheia 38g, colher de servir cheia 70g, escumadeira média cheia 90g, 2 colheres de sopa cheia 76g
+taco:546	Salada, de legumes, cozida no vapor	→ ibge:8500802	Salada de maionese	score 3.5	colher de sopa cheia 38g, colher de servir cheia 70g, escumadeira média cheia 90g, 2 colheres de sopa cheia 76g
+taco:547	Salpicão, de frango	→ ibge:8504801	Salpicao	score 5	colher de sopa cheia 25g, colher de servir cheia 40g, escumadeira média cheia 50g, 2 colheres de sopa cheia 50g
+taco:548	Sarapatel	→ (no measures)
+taco:549	Tabule	→ (no measures)
+taco:550	Tacacá	→ ibge:8502401	Tacacá	score 3	cumbuca 300g
+taco:551	Tapioca, com manteiga	→ ibge:6501516	Tapioca de goma	score 999	unidade 50g
+taco:552	Tucupi, com pimenta-de-cheiro	→ (no measures)
+taco:553	Vaca atolada	→ ibge:8508301	Vaca atolada	score 5	concha média cheia 130g, prato fundo 520g, 2 colheres de sopa cheias 40g
+taco:554	Vatapá	→ ibge:8502801	Vatapá	score 4	colher de sopa 25g, colher de servir 77g, concha 150g, 2 colheres de sopa cheia 50g, 2 conchas 300g
+taco:555	Virado à paulista	→ (no measures)
+taco:556	Yakisoba	→ (no measures)
+taco:557	Amendoim, grão, cru	→ ibge:6301001	Amendoim (em grão) (in natura)	score 5	unidade 0.8g, colher de sopa 17g, porção 9g, punhado 30g, pacote pequeno 50g
+taco:558	Amendoim, torrado, salgado	→ ibge:6301001	Amendoim (em grão) (in natura)	score 2.5	unidade 0.8g, colher de sopa 17g, porção 9g, punhado 30g, pacote pequeno 50g
+taco:559	Ervilha, em vagem	→ ibge:6301101	Ervilha em grão	score 2.5	colher de sopa cheia 27g, colher de servir cheia 38g, concha média cheia 140g, porção 72.5g, colher de sobremesa cheia 13g, 3 colheres de arroz cheias 114g
+taco:560	Ervilha, enlatada, drenada	→ ibge:7700201	Ervilha em conserva	score 3.5	colher de sopa cheia 27g, colher de servir cheia 38g, porção 72.5g
+taco:561	Feijão, carioca, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:562	Feijão, carioca, cru	→ (raw ingredient with cooked sibling)
+taco:563	Feijão, fradinho, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 2.5	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:564	Feijão, fradinho, cru	→ (raw ingredient with cooked sibling)
+taco:565	Feijão, jalo, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:566	Feijão, jalo, cru	→ (raw ingredient with cooked sibling)
+taco:567	Feijão, preto, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:568	Feijão, preto, cru	→ (raw ingredient with cooked sibling)
+taco:569	Feijão, rajado, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:570	Feijão, rajado, cru	→ (raw ingredient with cooked sibling)
+taco:571	Feijão, rosinha, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:572	Feijão, rosinha, cru	→ (raw ingredient with cooked sibling)
+taco:573	Feijão, roxo, cozido	→ ibge:6303102	Feijão (preto, mulatinho, roxo, rosinha)	score 999	colher de sopa cheia 17g, colher de servir cheia 35g, concha média cheia 140g, porção 50g, 2 conchas média cheias 280g
+taco:574	Feijão, roxo, cru	→ (raw ingredient with cooked sibling)
+taco:575	Grão-de-bico, cru	→ (no measures)
+taco:576	Guandu, cru	→ (no measures)
+taco:577	Lentilha, cozida	→ ibge:6302901	Lentilha	score 3	colher de sopa 18g, colher de servir 32g, concha média cheia 160g, porção 48g, 2 conchas média cheias 320g
+taco:578	Lentilha, crua	→ ibge:6302901	Lentilha	score 3	colher de sopa 18g, colher de servir 32g, concha média cheia 160g, porção 48g, 2 conchas média cheias 320g
+taco:579	Paçoca, amendoim	→ ibge:6903203	Paçoca	score 5	unidade 30g, colher de sopa cheia 50g, porção 32g, 2 colheres de sopa cheias 100g
+taco:580	Pé-de-moleque, amendoim	→ ibge:6903202	Pé de moleque	score 6.5	unidade 17g, porção 40g
+taco:581	Soja, farinha	→ (ingredient, no measures)
+taco:582	Soja, extrato solúvel, natural, fluido	→ (ingredient, no measures)
+taco:583	Soja, extrato solúvel, pó	→ (ingredient, no measures)
+taco:584	Soja, queijo (tofu)	→ (no measures)
+taco:585	Tremoço, cru	→ (no measures)
+taco:586	Tremoço, em conserva	→ (no measures)
+taco:587	Amêndoa, torrada, salgada	→ (no measures)
+taco:588	Castanha-de-caju, torrada, salgada	→ ibge:6600801	Castanha de caju	score 3.5	unidade média 2.5g, porção 10g, punhado 40g
+taco:589	Castanha-do-Brasil, crua	→ ibge:6600701	Castanha do pará	score 4	unidade 4g, porção 8g, punhado 40g
+taco:590	Coco, cru	→ ibge:6602401	Coco	score 3	pedaço médo 40g, pacote 100g
+taco:591	Coco, verde, cru	→ ibge:6600101	Coco da bahia (seco ou verde)	score 4	pedaço médio 40g
+taco:592	Farinha, de mesocarpo de babaçu, crua	→ (ingredient, no measures)
+taco:593	Gergelim, semente	→ (no measures)
+taco:594	Linhaça, semente	→ ibge:6302001	Semente de linhaça	score 7	colher de sopa 13g, colher de sobremesa 3g, 2 colheres de sopa 26g
+taco:595	Pinhão, cozido	→ ibge:6600401	Pinhão	score 3	unidade 4g
+taco:596	Pupunha, cozida	→ ibge:6601805	Pupunha	score 3	unidade média 22.5g, porção 45g
+taco:597	Noz, crua	→ ibge:6601501	Noz (nogueira)	score 3	unidade 5g, porção 25g, punhado 40g
