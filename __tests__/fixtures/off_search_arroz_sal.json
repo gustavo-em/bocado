@@ -1,0 +1,98 @@
+{
+  "hits": [
+    {
+      "code": "7896800777715",
+      "brands": ["Arroz Brilhante"],
+      "countries_tags": ["en:bolivia", "en:brazil"],
+      "nutriments": {
+        "carbohydrates_100g": 78,
+        "energy-kcal_100g": 350,
+        "energy-kj_100g": 1480,
+        "fat_100g": 2,
+        "fiber_100g": 2.8,
+        "proteins_100g": 7.6,
+        "salt_100g": 0.018,
+        "saturated-fat_100g": 0.4,
+        "sodium_100g": 0.0072
+      },
+      "product_name": "Arroz Integral",
+      "product_name_pt": "Arroz Integral"
+    },
+    {
+      "code": "0756869176379",
+      "brands": ["Arroz"],
+      "countries_tags": ["en:united-states"],
+      "nutriments": {
+        "carbohydrates_100g": 77.78,
+        "energy-kcal_100g": 356,
+        "fat_100g": 0,
+        "fiber_100g": 0,
+        "proteins_100g": 8.89,
+        "salt_100g": 0,
+        "saturated-fat_100g": 0,
+        "sodium_100g": 0,
+        "sugars_100g": 0
+      },
+      "product_name": "Parboiled Rice"
+    },
+    {
+      "code": "7411000511152",
+      "brands": ["Arroz"],
+      "countries_tags": ["en:united-states"],
+      "nutriments": {
+        "carbohydrates_100g": 84.44,
+        "energy-kcal_100g": 378,
+        "fat_100g": 0,
+        "fiber_100g": 0,
+        "proteins_100g": 6.67,
+        "salt_100g": 0,
+        "saturated-fat_100g": 0,
+        "sodium_100g": 0,
+        "sugars_100g": 0
+      },
+      "product_name": "Arroz, parboiled rice"
+    }
+  ],
+  "aggregations": null,
+  "facets": {},
+  "charts": {},
+  "page": 1,
+  "page_size": 3,
+  "page_count": 172,
+  "debug": {
+    "query": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "match_phrase": {
+                "product_name.pt": { "query": "arroz", "boost": 2.0 }
+              }
+            },
+            {
+              "match_phrase": {
+                "generic_name.pt": { "query": "arroz", "boost": 2.0 }
+              }
+            },
+            {
+              "match_phrase": { "brands": { "query": "arroz", "boost": 2.0 } }
+            },
+            {
+              "multi_match": {
+                "query": "arroz",
+                "fields": ["product_name.pt", "generic_name.pt", "brands"]
+              }
+            }
+          ]
+        }
+      },
+      "size": 3,
+      "from": 0
+    }
+  },
+  "took": 2,
+  "timed_out": false,
+  "count": 514,
+  "is_count_exact": true,
+  "warnings": null
+}
