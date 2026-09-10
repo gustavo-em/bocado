@@ -1,0 +1,48 @@
+<resources>
+
+    <!--
+        Everything the app shares between light and night. The bars take
+        @color/splash_background, which is the app background of the current
+        configuration, so the window is one surface from edge to edge.
+    -->
+    <style name="Base.AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+        <!--
+            The window itself, not only the bars: without this the theme falls
+            back to AppCompat's grey, which is not a colour this app owns.
+
+            This is the ground for anything that runs under `AppTheme`
+            directly. It is deliberately the flat colour and not the launch
+            drawable: painting the whole layer list here was tried and measured
+            on the J6 and cost about 28 ms of the cold start (median TotalTime
+            3240 ms against 3212 ms with the colour).
+
+            It is not what the launch shows. `MainActivity` no longer swaps
+            themes — it stays on `Theme.App.SplashScreen` below, which is what
+            keeps the disc on screen until React Native has drawn. Do not
+            reintroduce `setTheme(R.style.AppTheme)` in `onCreate` on the
+            strength of this line: that call is exactly what left four device
+            captures in a row showing a bare bone launch with no symbol on it.
+            Once the opening is over, `releaseLaunchBackground` swaps the
+            window down to this same colour from the app side.
+        -->
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+
+    <!-- Light: the bars are paper, so their icons are drawn dark. -->
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!--
+        The launch window: the brand ground with the symbol centred, handed
+        over to AppTheme in MainActivity.onCreate. No library, no animation,
+        nothing to skip.
+    -->
+    <style name="Theme.App.SplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Fraunces144Soft-Medium.ttf",
+      "sha1": "b195167df1acc99239b105279ce65c19026051c2"
+    },
+    {
+      "path": "assets/fonts/Fraunces144Soft-Regular.ttf",
+      "sha1": "c8fa674d90b1ee47c3be50cd517b702c573e0d02"
+    },
+    {
+      "path": "assets/fonts/Fraunces144Soft-SemiBold.ttf",
+      "sha1": "d00cd30f2c4d828a8790f82cdb43f8c27332388e"
+    },
+    {
+      "path": "assets/fonts/Inter-Medium.ttf",
+      "sha1": "c1d25d8c10adb45a970e71c387bbd6380f10992d"
+    },
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "sha1": "6e3430f906a4b42b4b63fd8f33e498a43d9f8d84"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold.ttf",
+      "sha1": "b4bdaf6bdd6a479b46c452a7bbae13f5cb2079bf"
+    },
+    {
+      "path": "assets/fonts/LICENSE-Fraunces.txt",
+      "sha1": "b6427d2821cf8c99a97abaabc357a621183a1fb0"
+    },
+    {
+      "path": "assets/fonts/LICENSE-Inter.txt",
+      "sha1": "174b037934980ddcad39144da3ce7b0f9d73546c"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<resources>
+
+    <!--
+        From API 27 the navigation bar can carry dark icons too, which is what
+        a paper-coloured bar needs. Night keeps the light icons: the night
+        qualifier is matched before the version one.
+    -->
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+</resources>

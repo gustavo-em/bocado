@@ -1,0 +1,10 @@
+<resources>
+
+    <!--
+        Night: same bars, taking the dark @color/splash_background, with the
+        light-icon flags left off so the system draws them light. The night
+        qualifier outranks the version ones, so this also covers v27+.
+    -->
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+</resources>

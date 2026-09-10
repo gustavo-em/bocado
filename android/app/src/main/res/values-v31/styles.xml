@@ -1,0 +1,22 @@
+<resources>
+
+    <!--
+        From API 31 the system draws the launch window itself. Same ground and
+        same disc as the pre-31 windowBackground, so a phone of either era
+        opens on the same image.
+
+        The icon is `splash_icon_v31`, not `splash_icon`: this API scales the
+        drawable to its own 240 dp icon canvas instead of respecting the
+        bitmap's intrinsic size, so the 96 dp asset the layer list uses would
+        arrive on screen with the disc at 140 dp — two and a half times what
+        the overlay draws a frame later. The v31 asset is authored at that
+        240 dp canvas with the disc still 56 dp inside it.
+    -->
+    <style name="Theme.App.SplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon_v31</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/splash_background</item>
+    </style>
+
+</resources>
