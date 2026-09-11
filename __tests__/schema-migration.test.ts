@@ -22,6 +22,12 @@ const { DatabaseSync } = require('node:sqlite') as {
 
 /** Everything that had shipped before task 20 added its own migration. */
 const PREVIOUS_VERSION = 3;
+/**
+ * Task 23 appended the `meal_photos` table after the minerals columns, so the
+ * minerals entry is no longer the last one — it is still at
+ * `PREVIOUS_VERSION`, which is what the test below checks.
+ */
+const MEAL_PHOTOS_VERSION = 4;
 
 function openAt(version: number): SqliteDatabase {
   const db = new DatabaseSync(':memory:');
@@ -57,10 +63,10 @@ function seedOneDay(db: SqliteDatabase): void {
 describe('schema', () => {
   test('SCHEMA_VERSION is the number of migrations', () => {
     expect(SCHEMA_VERSION).toBe(MIGRATIONS.length);
-    expect(MIGRATIONS).toHaveLength(PREVIOUS_VERSION + 1);
+    expect(MIGRATIONS).toHaveLength(MEAL_PHOTOS_VERSION + 1);
   });
 
-  test('the minerals migration is the new last entry and only adds columns', () => {
+  test('the minerals migration only adds columns', () => {
     const statements = MIGRATIONS[PREVIOUS_VERSION];
     expect(statements).toHaveLength(MICRO_COLUMNS.length);
     for (const statement of statements) {

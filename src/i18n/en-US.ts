@@ -162,6 +162,17 @@ export const enUS: Mirror<CopyTable> = {
     openLink: 'Open {source}',
     brandMark: 'The Bocado mark',
   },
+  photo: {
+    add: 'Photo of the plate',
+    addA11y: 'Add a photo of the {meal} plate',
+    thumbA11y: 'Photo of the {meal} plate',
+    remove: 'Remove photo',
+    removed: 'Photo removed',
+    removeA11y: 'Remove the photo of the {meal} plate',
+    noCamera: 'This phone has no camera.',
+    denied: 'No camera access. Allow it in the phone settings.',
+    failed: 'The photo could not be saved.',
+  },
   onboarding: {
     stepA11y: 'Step {step} of {total}',
     intentTitle: 'What do you want?',

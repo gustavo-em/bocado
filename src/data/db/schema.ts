@@ -151,6 +151,35 @@ export const MIGRATIONS: readonly string[][] = [
       column => `ALTER TABLE foods ADD COLUMN ${column} REAL`,
     ),
   ],
+  [
+    /*
+      One photo per meal of a day (task 23). The key is (day, meal), not an
+      entry: the owner photographs a plate, and a plate is several entries —
+      rice, beans and steak share one picture. Replacing the photo overwrites
+      the row, which is why the key is the meal and not a row id.
+
+      `file_name` is the base name inside the app's own photo directory, never
+      an absolute path or a content:// URI. The directory is resolved at read
+      time, because the absolute path changes when the app is reinstalled or
+      moved to a different user profile, and a stored absolute path would turn
+      every old photo into a broken image.
+
+      `bytes` is kept so the app can say how much space the photos take
+      without stat-ing every file, and `width`/`height` so a thumbnail can
+      reserve its space before the file is decoded.
+    */
+    `CREATE TABLE IF NOT EXISTS meal_photos (
+      day        TEXT NOT NULL,
+      meal       TEXT NOT NULL,
+      file_name  TEXT NOT NULL,
+      width      INTEGER NOT NULL,
+      height     INTEGER NOT NULL,
+      bytes      INTEGER NOT NULL,
+      created_at TEXT NOT NULL,
+      PRIMARY KEY (day, meal)
+    )`,
+    `CREATE INDEX IF NOT EXISTS meal_photos_day ON meal_photos(day)`,
+  ],
 ];
 
 export const SCHEMA_VERSION = MIGRATIONS.length;

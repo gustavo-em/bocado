@@ -172,6 +172,17 @@ export const ptBR = {
     /** Read out for the mark at the foot of the screen. */
     brandMark: 'Marca do Bocado',
   },
+  photo: {
+    add: 'Foto do prato',
+    addA11y: 'Adicionar foto do prato de {meal}',
+    thumbA11y: 'Foto do prato de {meal}',
+    remove: 'Remover foto',
+    removed: 'Foto removida',
+    removeA11y: 'Remover a foto do prato de {meal}',
+    noCamera: 'Este aparelho não tem câmera.',
+    denied: 'Sem acesso à câmera. Libere nas configurações do aparelho.',
+    failed: 'Não deu para guardar a foto.',
+  },
   onboarding: {
     stepA11y: 'Passo {step} de {total}',
     intentTitle: 'O que você quer?',

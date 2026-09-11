@@ -28,6 +28,8 @@ import { DiaryEntryRow } from '../../components/DiaryEntryRow';
 import { HeroBlock } from '../../components/HeroBlock';
 import { Icon } from '../../components/Icon';
 import { MealEmptyLine, MealHeader } from '../../components/MealHeader';
+import { MealPhotoRow } from './components/MealPhotoRow';
+import type { MealPhoto } from '../../data/diary/MealPhotoRepository';
 import { ScreenHeader } from '../../components/ScreenHeader';
 import { useEntryArrival } from '../../components/useEntryArrival';
 import { usePressAnimation } from '../../components/usePressAnimation';
@@ -69,6 +71,7 @@ import { useDiaryDay } from './hooks/useDiaryDay';
 import { useDisplayMode } from './hooks/useDisplayMode';
 import { useMineralsEnabled } from './hooks/useMineralsEnabled';
 import { useEntryRemoval } from './hooks/useEntryRemoval';
+import { useMealPhoto } from './hooks/useMealPhoto';
 import { useGoal } from './hooks/useGoal';
 import { useToday } from './hooks/useToday';
 
@@ -95,6 +98,7 @@ export function TodayScreen() {
   const day = useDiaryDay(selectedDay, goal);
   const removal = useEntryRemoval();
   const quick = useQuickLog(selectedDay);
+  const photos = useMealPhoto(selectedDay);
   // Only one entry shows "Remover" at a time; opening another closes it.
   const [openEntry, setOpenEntry] = useState<string | null>(null);
   // The day swipe must wait for a row's own swipe to give up, or the day
@@ -210,11 +214,12 @@ export function TodayScreen() {
     (entry: DiaryEntryView) => {
       setOpenEntry(null);
       quick.dismiss();
+      photos.dismiss();
       removal.remove(entry);
     },
     // `remove` is stable; the snackbar changing must not re-render the rows.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [removal.remove, quick.dismiss],
+    [removal.remove, quick.dismiss, photos.dismiss],
   );
   // "Remover" on the portion sheet lands here, in the same path as the swipe.
   usePendingRemoval(removeEntry);
@@ -226,6 +231,7 @@ export function TodayScreen() {
   const logChip = useCallback(
     (meal: Meal, item: SuggestionItem) => {
       removal.dismiss();
+      photos.dismiss();
       quick.log(item.food, item.memory, meal);
     },
     // Both are stable; the snackbar changing must not re-render the chips.
@@ -252,6 +258,7 @@ export function TodayScreen() {
   const repeatChip = useCallback(
     (meal: Meal, source: RepeatSource) => {
       removal.dismiss();
+      photos.dismiss();
       quick.copyMeal(
         source.day,
         meal,
@@ -386,6 +393,9 @@ export function TodayScreen() {
                 onLogChip={logChip}
                 onOpenChip={openChipPortion}
                 onRepeat={repeatChip}
+                photo={photos.byMeal.get(meal)}
+                onCapturePhoto={photos.capture}
+                onRemovePhoto={photos.remove}
               />
             ))}
             {/*
@@ -403,12 +413,23 @@ export function TodayScreen() {
         </Animated.View>
       </GestureDetector>
       {/*
-        One pill for the whole screen: whichever of the two actions spoke last
-        owns it, and the other one is taken down before it does.
+        One pill for the whole screen: whichever of the three actions spoke
+        last owns it, and the other two are taken down before it does. The
+        photo comes last in the order because logging food is the louder
+        event: if both happened in the same breath, the food is the one the
+        owner is waiting to read.
       */}
       <Snackbar
-        message={quick.snackbar ?? removal.snackbar}
-        onUndo={quick.snackbar ? quick.undo : removal.undo}
+        message={quick.snackbar ?? removal.snackbar ?? photos.snackbar}
+        onUndo={
+          quick.snackbar
+            ? quick.undo
+            : removal.snackbar
+            ? removal.undo
+            : photos.snackbar
+            ? photos.undo
+            : undefined
+        }
         bottom={insets.bottom + SNACKBAR_GAP}
         testID="today-snackbar"
       />
@@ -481,6 +502,10 @@ interface MealSectionProps {
   /** Long press, and the chip's accessibility action: the portion sheet. */
   onOpenChip: (meal: Meal, item: SuggestionItem) => void;
   onRepeat: (meal: Meal, source: RepeatSource) => void;
+  /** The plate's photo for this meal, when the day has one. */
+  photo?: MealPhoto;
+  onCapturePhoto: (meal: Meal) => void;
+  onRemovePhoto: (meal: Meal) => void;
 }
 
 function MealSection({
@@ -501,6 +526,9 @@ function MealSection({
   onLogChip,
   onOpenChip,
   onRepeat,
+  photo,
+  onCapturePhoto,
+  onRemovePhoto,
 }: MealSectionProps) {
   const theme = useTheme();
   const title = t(`meals.${meal}`);
@@ -648,6 +676,22 @@ function MealSection({
         chipLine(0)
       ) : (
         <MealEmptyLine />
+      )}
+      {/*
+        Below the meal, never inside the header. Offered on an empty meal too:
+        the owner photographs the plate before deciding what to write down,
+        and a picture with nothing logged yet is exactly the case the later
+        estimate-from-photo work has to read.
+      */}
+      {day.summary === null ? null : (
+        <MealPhotoRow
+          meal={meal}
+          mealTitle={title}
+          photo={photo}
+          onAdd={onCapturePhoto}
+          onRemove={onRemovePhoto}
+          testID={`meal-${meal}-photo`}
+        />
       )}
     </View>
   );

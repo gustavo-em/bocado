@@ -55,6 +55,29 @@ jest.mock('@op-engineering/op-sqlite', () => {
   return { open };
 });
 
+jest.mock('react-native-blob-util', () => {
+  // The real module builds a NativeEventEmitter the moment it is imported,
+  // which throws under jest. Only the filesystem half is used here (meal
+  // photos), and it answers as if every call succeeded: the paths themselves
+  // are asserted against the migration, not against a real directory.
+  const fs = {
+    dirs: { DocumentDir: '/tmp/bocado-test' },
+    isDir: jest.fn(async () => true),
+    mkdir: jest.fn(async () => undefined),
+    cp: jest.fn(async () => undefined),
+    unlink: jest.fn(async () => undefined),
+    stat: jest.fn(async () => ({ size: 1024 })),
+  };
+  return { __esModule: true, default: { fs } };
+});
+
+jest.mock('react-native-image-picker', () => ({
+  // Cancelled by default: a test that wants a photo overrides this, and one
+  // that does not must never open a camera.
+  launchCamera: jest.fn(async () => ({ didCancel: true })),
+  launchImageLibrary: jest.fn(async () => ({ didCancel: true })),
+}));
+
 jest.mock('react-native-haptic-feedback', () => ({
   trigger: jest.fn(),
   HapticFeedbackTypes: {},

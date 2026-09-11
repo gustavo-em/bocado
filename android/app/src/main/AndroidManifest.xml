@@ -2,6 +2,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- Photographing a plate (task 23). The camera is optional hardware:
+         a phone without one still installs, and the app hides the action. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
