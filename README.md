@@ -19,8 +19,8 @@ household measures attached, so logging lunch is three taps and no arithmetic.
 | ------------------------------------------ | ------------------------------------------- | ------------------------------------------- |
 | <img src="docs/img/today.png" width="240"> | <img src="docs/img/buscar.png" width="240"> | <img src="docs/img/porcao.png" width="240"> |
 
-| Micronutrients                                      | Dark theme                                       | English                                            |
-| --------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
+| Micronutrients                                      | Dark theme                                      | English                                            |
+| --------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------- |
 | <img src="docs/img/micronutrients.png" width="240"> | <img src="docs/img/dark-theme.png" width="240"> | <img src="docs/img/today-english.png" width="240"> |
 
 ---
