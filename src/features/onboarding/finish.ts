@@ -6,6 +6,15 @@ import {
 } from '../../domain/goals/mifflin';
 
 /**
+ * How many steps the first run has: intent, profile, goal.
+ *
+ * The step strip reads from this, so the three screens cannot disagree about
+ * how long the flow is. "Recalcular" reuses two of these screens without the
+ * strip — it is an edit, not a first run, and it has no third step.
+ */
+export const ONBOARDING_STEPS = 3;
+
+/**
  * "Pular": the round default goal, flagged as an estimate so "Metas" can say
  * where it came from. The first run is over either way — it never comes back.
  */

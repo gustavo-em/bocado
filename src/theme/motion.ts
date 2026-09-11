@@ -175,6 +175,19 @@ export const ENTRY_IN = {
 /** How far below its place the entry starts. Rises, settles, stops. */
 export const ENTRY_RISE_DP = 12;
 
+/**
+ * A first-run step composing itself: its blocks arrive with `ENTRY_IN`, one
+ * after the other.
+ *
+ * Wider than `LIST_STAGGER_MS` on purpose. A results list staggers to hint at
+ * order in something the user is scanning, so it has to stay out of the way;
+ * a first screen has four or five blocks and nothing to scan, and the eye has
+ * time to follow each one. Four blocks at 70 ms are read as one movement that
+ * settles in 440 ms with the last block's own 260 ms — still under the half
+ * second where a screen stops feeling immediate.
+ */
+export const ONBOARDING_STAGGER_MS = 70;
+
 /** Result rows appearing: opacity + 8 dp rise, 20 ms apart, first six only. */
 export const LIST_STAGGER_MS = 20;
 export const LIST_STAGGER_MAX_ROWS = 6;

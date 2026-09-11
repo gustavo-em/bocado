@@ -14,6 +14,7 @@ import {
   type NumberFieldHandle,
 } from '../../components/NumberField';
 import { ScreenHeader } from '../../components/ScreenHeader';
+import { StepProgress } from '../../components/StepProgress';
 import { SegmentedControl } from '../../components/SegmentedControl';
 import type { RootStackParamList } from '../../app/navigation/routes';
 import { prefs } from '../../data/prefs/prefs';
@@ -32,7 +33,7 @@ import { t, type CopyKey } from '../../i18n';
 import { useTheme } from '../../theme';
 import { textDefaults } from '../../theme/type';
 import { OnboardingActions } from './OnboardingActions';
-import { skipOnboarding } from './finish';
+import { ONBOARDING_STEPS, skipOnboarding } from './finish';
 
 type Navigation = NativeStackNavigationProp<
   RootStackParamList,
@@ -157,6 +158,20 @@ export function ProfileScreen() {
           accessibilityLabel: t('common.back'),
         }}
       />
+      {mode === 'recalculate' ? null : (
+        <View
+          style={{
+            paddingHorizontal: theme.spacing.lg,
+            paddingBottom: theme.spacing.lg,
+          }}
+        >
+          <StepProgress
+            total={ONBOARDING_STEPS}
+            current={2}
+            testID="onboarding-progress"
+          />
+        </View>
+      )}
       <ScrollView
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingBottom: theme.spacing.xl }}

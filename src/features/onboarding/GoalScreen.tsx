@@ -27,6 +27,7 @@ import {
   type NumberFieldHandle,
 } from '../../components/NumberField';
 import { ScreenHeader } from '../../components/ScreenHeader';
+import { StepProgress } from '../../components/StepProgress';
 import type { RootStackParamList } from '../../app/navigation/routes';
 import type { DailyGoal } from '../../domain/diary/Meal';
 import { parseGoalInput } from '../../domain/diary/daySummary';
@@ -43,7 +44,7 @@ import { useTheme } from '../../theme';
 import { FADE, SELECT } from '../../theme/motion';
 import { textDefaults } from '../../theme/type';
 import { OnboardingActions } from './OnboardingActions';
-import { saveCalculatedGoal, skipOnboarding } from './finish';
+import { ONBOARDING_STEPS, saveCalculatedGoal, skipOnboarding } from './finish';
 
 type Navigation = NativeStackNavigationProp<
   RootStackParamList,
@@ -191,6 +192,20 @@ export function GoalScreen() {
           accessibilityLabel: t('common.back'),
         }}
       />
+      {mode === 'recalculate' ? null : (
+        <View
+          style={{
+            paddingHorizontal: theme.spacing.lg,
+            paddingBottom: theme.spacing.lg,
+          }}
+        >
+          <StepProgress
+            total={ONBOARDING_STEPS}
+            current={3}
+            testID="onboarding-progress"
+          />
+        </View>
+      )}
       <ScrollView
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingBottom: theme.spacing.xl }}

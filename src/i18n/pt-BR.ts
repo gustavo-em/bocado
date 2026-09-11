@@ -173,6 +173,7 @@ export const ptBR = {
     brandMark: 'Marca do Bocado',
   },
   onboarding: {
+    stepA11y: 'Passo {step} de {total}',
     intentTitle: 'O que você quer?',
     intentHint: 'Dá para mudar depois em Metas.',
     lose: 'Perder peso',

@@ -163,6 +163,7 @@ export const enUS: Mirror<CopyTable> = {
     brandMark: 'The Bocado mark',
   },
   onboarding: {
+    stepA11y: 'Step {step} of {total}',
     intentTitle: 'What do you want?',
     intentHint: 'You can change this later in Goals.',
     lose: 'Lose weight',
